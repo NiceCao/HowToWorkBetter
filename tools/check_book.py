@@ -49,7 +49,9 @@ OUT = os.path.join(ROOT, 'out')
 REPORT = os.path.join(OUT, 'check-report.txt')
 
 # ======================= 目录正文质检（默认模式） =======================
-MAX_ENTRY = 800            # 整条正文汉字数上限
+MAX_ENTRY = 800            # 整条正文汉字数参考线（不是硬指标：字数只是提醒你检查，
+                           # 判断标准是「读者能不能花最小精力一遍读懂并照做」，
+                           # 某条真需要 900 字说清楚就让它超；压丢了关键步骤/条件/金额口径才是问题）
 MAX_PLAIN = 120            # 说人话汉字数上限
 URL_TIMEOUT = 15           # --urls 时单条链接超时（秒）
 
@@ -273,7 +275,7 @@ def render_report(chapters, urls_result):
     L.append('=' * 68)
     L.append('- 章数：%d' % n_ch)
     L.append('- 条目数：%d' % n_entries)
-    L.append('- 超字数条目（正文 >%d 字）：%d' % (MAX_ENTRY, len(over_entry)))
+    L.append('- 正文超 %d 字的条目（提示，只为方便阅读，不是必须压到）：%d' % (MAX_ENTRY, len(over_entry)))
     L.append('- 缺元信息条目：%d' % len(miss_meta))
     L.append('- 无来源条目（无链接且未写「未找到…官方数据」）：%d' % len(no_source))
     L.append('- 来源链接总数：%d（去重 %d）' % (len(all_links), len(uniq_links)))
@@ -335,7 +337,7 @@ def render_report(chapters, urls_result):
     L.append('=' * 68)
     L.append('本次运行（%s）：' % now)
     L.append('- 章数 %d，条目数 %d' % (n_ch, n_entries))
-    L.append('- 超 %d 字条目 %d 条；缺元信息条目 %d 条；无来源条目 %d 条'
+    L.append('- 正文超 %d 字条目 %d 条（提示，不按错误算）；缺元信息条目 %d 条；无来源条目 %d 条'
              % (MAX_ENTRY, len(over_entry), len(miss_meta), len(no_source)))
     L.append('- 来源链接总数 %d 条，去重 %d 条' % (len(all_links), len(uniq_links)))
     L.append('- 说人话缺失 %d 条、超长 %d 条' % (len(miss_plain), len(over_plain)))
@@ -550,7 +552,7 @@ def main():
 
     print('《高性价比工作指南》质检完成，报告：out/check-report.txt')
     print('章数 %d，条目数 %d' % (stats['n_ch'], stats['n_entries']))
-    print('超 %d 字条目 %d 条；缺元信息 %d 条；无来源 %d 条'
+    print('正文超 %d 字条目 %d 条（提示，不是错误）；缺元信息 %d 条；无来源 %d 条'
           % (MAX_ENTRY, stats['over'], stats['miss_meta'], stats['no_source']))
     print('来源链接总数 %d 条，去重 %d 条' % (stats['links'], stats['uniq']))
     print('说人话缺失 %d 条、超 %d 字 %d 条' % (stats['miss_plain'], MAX_PLAIN, stats['over_plain']))
