@@ -66,6 +66,11 @@ SRC_START_RE = re.compile(r'^>?\s*\*{0,2}来源\s*[：:]')
 URL_RE = re.compile(r'https?://[^\s<>「」『』【】（），。；、""\'\'`]+')
 
 
+
+def _is_none_src(src_txt: str) -> bool:
+    """来源写成「无」的两种形式都算合规：同一行「来源：无」，或下一行列表项「- 无」。"""
+    return bool(re.search(r'来源\s*[:：]\s*[-–—•*]?\s*无\s*[。.]?\s*$',
+                          re.sub(r'[\s*]+', ' ', src_txt or '')))
 def clean_url(u):
     """削掉链接末尾粘上的标点，并去掉不成对的右括号。"""
     u = u.rstrip('.,;:!?，。；：、')
@@ -168,7 +173,7 @@ def parse_entry(head_line, body):
     if si is None:
         issues.append(('缺来源', '没有「来源：」块',
                        '补「**来源：**」，放 1–3 条能直接证明本条的官方来源；没有就写'
-                       '「未找到直接相关的官方数据」') or re.search(r'^\s*\**\s*来源\s*[:：]\s*\**\s*无\s*[。.]?\s*$', src_txt, re.M))
+                       '「未找到直接相关的官方数据」') or _is_none_src(src_txt))
     else:
         blk = [body[si]]
         j = si + 1
@@ -185,7 +190,7 @@ def parse_entry(head_line, body):
         src_txt = '\n'.join(blk)
         src_links = [clean_url(u) for u in URL_RE.findall(src_txt)]
         src_links = [u for u in src_links if u]
-        if not src_links and '未找到' not in src_txt and not re.search(r'^\s*\**\s*来源\s*[:：]\s*\**\s*无\s*[。.]?\s*$', src_txt, re.M):
+        if not src_links and '未找到' not in src_txt and not _is_none_src(src_txt):
             issues.append((
                 '来源无据',
                 '来源块既没有 http(s) 链接，也没有写「无」（或旧的「未找到…官方数据」）',
