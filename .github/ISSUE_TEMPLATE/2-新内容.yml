@@ -1,0 +1,33 @@
+name: 新内容：建议补一个主题
+description: 书里还没写到、你觉得该加进来的主题
+title: "新内容："
+labels: ["新内容"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        本书只收能回答「花掉什么、换回什么」的建议，来源优先用法律条文、官方文件和政府网页。
+  - type: input
+    id: topic
+    attributes:
+      label: 主题
+      description: 想加的是什么主题，一句话说清。
+      placeholder: 比如：职称怎么评
+    validations:
+      required: true
+  - type: textarea
+    id: question
+    attributes:
+      label: 想让书回答什么问题
+      description: 写具体一点，比如「该去哪个机构、要准备什么材料、大概花多久」。
+      placeholder: 你希望这一条能回答的问题
+    validations:
+      required: true
+  - type: textarea
+    id: source
+    attributes:
+      label: 你知道的来源（可选）
+      description: 有就给：法律条文、官方文件、政府网页的链接。没有可以留空。
+      placeholder: 可以不填
+    validations:
+      required: false

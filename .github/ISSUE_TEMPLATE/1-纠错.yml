@@ -1,0 +1,42 @@
+name: 纠错：书里某条写错了或过时了
+description: 数字不对、法规改了、来源打不开、说法有误
+title: "第 X 章第 Y 条："
+labels: ["纠错"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        谢谢纠错。下面四栏请都填上，尤其是最后一栏「依据」——
+        没有可查的官方来源，这一条就没法改。知乎、公众号、百家号这类转述不算依据。
+  - type: input
+    id: where
+    attributes:
+      label: 第几章第几条
+      description: 写清章号和条号，比如「第 32 章第 2 条」。
+      placeholder: 第 X 章第 Y 条
+    validations:
+      required: true
+  - type: textarea
+    id: original
+    attributes:
+      label: 原文怎么写的
+      description: 把书里那一句原样抄过来，方便我们定位。
+      placeholder: 把原文那句照抄在这里
+    validations:
+      required: true
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: 应该改成什么
+      description: 说清楚改成什么样，能直接替换最好。
+      placeholder: 建议改成……
+    validations:
+      required: true
+  - type: textarea
+    id: source
+    attributes:
+      label: 依据（法律条文 / 官方文件 / 政府网页链接）
+      description: 贴法条原文、官方文件或政府网页的链接，能直接点开核对。
+      placeholder: https://……
+    validations:
+      required: true

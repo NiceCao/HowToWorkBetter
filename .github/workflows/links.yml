@@ -1,0 +1,34 @@
+# 失效链接检查：每周一 01:00 UTC 自动跑一次全书外链，结果写在这次运行的 Summary 页里。
+# 只报告不报错：检查脚本的执行结果不影响工作流成败，所以这个工作流永远是绿的，要看结果得点进本次运行的 Summary。
+# 脚本会把握不准的链接分成三类，只有第一类需要动手修：
+#   1. 确定失效——服务器明确回 404 / 410，或 DOI 查无此号，链接真的没了，要换成新地址。
+#   2. 连不上——连接超时或被拒。多半是政府网站挡了境外机房的 IP（GitHub 的服务器在境外），
+#      用你自己的浏览器能打开就不用管；连着几周都连不上才值得看一眼。
+#   3. 站点的加密方式较老——TLS 握手谈不拢，是那种老政府站的加密套件太旧。
+#      浏览器为了兼容还能打开，脚本连不上，不用修。
+# 为什么单独成一个工作流：外链成百上千，通不通跟正文改没改没关系，
+# 挂进发布流程里每次推送都跑，既慢又吵。
+name: 失效链接检查
+
+on:
+  schedule:
+    # 每周一 01:00 UTC（北京时间 09:00）
+    - cron: '0 1 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  links:
+    name: 失效链接检查
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: 抽查全书外链（只报告，不因失败中断）
+        # 脚本退出码本身恒为 0；末尾的 || true 只是再加一道保险，确保这一步不会把 job 弄红。
+        run: python3 tools/check_book.py --urls || true

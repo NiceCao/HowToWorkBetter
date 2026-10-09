@@ -60,12 +60,18 @@ for f in sorted(glob.glob('book/*.md')):
         ev = field(head, r'证据等级[:：]\s*([ABCabc])', '').upper()
         scopes = [x.strip() for x in re.split(r'[/／+]', scope) if x.strip()]
         dispute = ('限制与争议' in b)
+        # 来源块：统计链接数，以及是否明说「未找到直接相关的官方数据」
+        m = re.search(r'\*\*来源[^\n]*\*\*(.*?)(?=\n\*\*|\Z)', b, re.S)
+        src = m.group(1) if m else ''
+        links = re.findall(r'https?://\S+', src)
+        noref = bool(re.search(r'未找到(直接相关的)?官方', src))
+        srcs = len({l.rstrip('.,，。') for l in links})
         money, time, energy = bucket(money, 'money'), bucket(time, 'time'), bucket(energy, 'energy')
         scopes = [s for s in dict.fromkeys(s.split('（')[0].replace(' ', '') for s in scopes) if s in ('收入', '职业寿命', '时间精力', '职业自由')]
         items.append({'c': n, 'f': CH[n]['file'][:-3], 'e': int(num), 't': title_text,
                       'lv': lv.replace('性价比', '') or '', 'ev': ev,
                       'm': money, 'tm': time, 'en': energy, 'sc': scopes,
-                      'a': anchor(title), 'd': dispute})
+                      'a': anchor(title), 'd': dispute, 'srcs': srcs, 'nr': noref})
 
 json.dump(items, open('data/items.json', 'w', encoding='utf-8'), ensure_ascii=False, indent=0)
 print('items:', len(items))
@@ -77,3 +83,5 @@ print('口径:', Counter(s for i in items for s in i['sc']))
 print('归一后 钱:', Counter(i['m'] for i in items), '\n时间:', Counter(i['tm'] for i in items), '\n精力:', Counter(i['en'] for i in items))
 print('无口径:', sum(1 for i in items if not i['sc']))
 print('无元信息条目:', sum(1 for i in items if not i['lv'] or not i['ev']))
+print('无来源链接条目:', sum(1 for i in items if i['srcs'] == 0), '其中明写无官方来源:', sum(1 for i in items if i['nr']))
+print('来源链接总数:', sum(i['srcs'] for i in items), '| 来源≥3 条:', sum(1 for i in items if i['srcs'] >= 3))

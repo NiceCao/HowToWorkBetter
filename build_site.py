@@ -116,10 +116,19 @@ def build_chapter(f):
     items_n = sum(1 for it in ITEMS if it['c'] == n)
     b = blk_of.get(n)
     blk_txt = f"板块{CN[b-1]}·{next(x['name'] for x in BLOCKS if x['n']==b)}" if b else ''
+    import urllib.parse
+    page_url = 'https://nicecao.github.io/HowToWorkBetter/ch/' + urllib.parse.quote(CH[n]['file'][:-3] + '.html')
     page = f'''<!doctype html>
 <html lang="zh-CN"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{head} · 高性价比工作指南</title>
+<meta name="description" content="{head}：本章 {items_n} 条建议，每条写明成本、收益和证据等级。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="{head}">
+<meta property="og:image" content="https://nicecao.github.io/HowToWorkBetter/og.png">
+<meta property="og:url" content="{page_url}">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="{page_url}">
 <style>{CSS}</style></head><body>
 <div class="bar"><div class="in"><a href="../index.html">← 返回检索</a><span>{blk_txt}</span><span>共 {items_n} 条</span></div></div>
 <div class="wrap">

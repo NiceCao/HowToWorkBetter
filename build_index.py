@@ -104,6 +104,7 @@ filters_html = (
     + chips('m', '要花的钱', [('不花钱', '不花钱'), ('少', '少'), ('中/多', '中/多')])
     + chips('tm', '要花的时间', [('少', '少'), ('中', '中'), ('多', '多')])
     + chips('en', '要耗的精力', [('少', '少'), ('中', '中'), ('多', '多')])
+    + chips('flag', '引用情况', [('r3', '来源 ≥3 条'), ('r0', '没放官方来源')])
     + '<div class="fgroup"><button class="chip reset" id="reset">清空筛选</button></div>'
 )
 
@@ -112,7 +113,22 @@ tpl = f'''<!doctype html>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>《高性价比工作指南》· 检索与指路</title>
+<title>《高性价比工作指南》· 50 章 416 条，按阶段、职业和板块找建议</title>
+<meta name="description" content="写给普通打工人的工作指南：50 章、416 条建议，每条写明要花掉什么、能换回什么、证据有多硬。可以按你现在在哪一步、你是做什么的、或按板块找。">
+<link rel="canonical" href="https://nicecao.github.io/HowToWorkBetter/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="高性价比工作指南 · 50 章 416 条">
+<meta property="og:description" content="每条建议都写明要花掉什么、能换回什么、证据有多硬；按阶段、按职业、按板块都能找。">
+<meta property="og:url" content="https://nicecao.github.io/HowToWorkBetter/">
+<meta property="og:image" content="https://nicecao.github.io/HowToWorkBetter/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">
+{{"@context":"https://schema.org","@type":"Book","name":"高性价比工作指南",
+"description":"写给普通打工人的工作指南，50 章 416 条建议，每条写明成本、收益和证据等级。",
+"inLanguage":"zh-CN","url":"https://nicecao.github.io/HowToWorkBetter/",
+"image":"https://nicecao.github.io/HowToWorkBetter/og.png",
+"author":{{"@type":"Person","name":"作者"}},"license":"https://creativecommons.org/licenses/by/4.0/"}}
+</script>
 <style>
 :root {{
   --ink:#1c1c1e; --ink2:#6b6b70; --line:#e8e8ec; --bg:#ffffff; --bg2:#f7f7f9;
@@ -184,6 +200,25 @@ input[type=search]:focus {{ outline:2px solid var(--accent-soft); border-color:v
 footer {{ margin-top:64px; padding-top:22px; border-top:1px solid var(--line); color:var(--ink2); font-size:13px; }}
 footer a {{ color:var(--ink2); }}
 @media (max-width:520px) {{ .wrap {{ padding:36px 18px 72px; }} header h1 {{ font-size:25px; }} }}
+mark {{ background:#fff2c2; color:inherit; border-radius:3px; padding:0 2px; }}
+.legend {{ border:1px solid var(--line); border-radius:14px; padding:6px 22px 14px; margin:14px 0 0; }}
+.legend div {{ border-top:1px solid var(--line); padding:12px 0 2px; font-size:14.5px; color:var(--ink); }}
+.legend div:first-child {{ border-top:0; }}
+.legend b {{ color:var(--accent); font-weight:600; margin-right:6px; }}
+.legend code {{ background:var(--bg2); border-radius:5px; padding:1px 6px; font-size:13px; }}
+.sharehint {{ color:var(--ink2); font-size:12.5px; margin:6px 0 0; }}
+@media (prefers-color-scheme: dark) {{
+  :root {{ --ink:#e8e8ec; --ink2:#a0a0a6; --line:#2c2c31; --bg:#141416; --bg2:#1c1c20; --accent:#f5923c; --accent-soft:#3a2a1a; }}
+  body {{ background:var(--bg); color:var(--ink); }}
+  .search {{ background:rgba(20,20,22,.94); }}
+  input[type=search] {{ background:var(--bg2); color:var(--ink); }}
+  .chip {{ background:var(--bg2); color:var(--ink); }}
+  a.ch:hover {{ background:#4a3520; }}
+  mark {{ background:#4a3a12; }}
+  .tag.evA {{ color:#7bd88f; background:#17301f; }}
+  .tag.evB {{ color:#e2c56b; background:#2f2a14; }}
+  .tag.evC {{ color:#f0a878; background:#332315; }}
+}}
 </style>
 </head>
 <body>
@@ -211,9 +246,20 @@ footer a {{ color:var(--ink2); }}
 </div>
 <div class="search"><input id="q" type="search" placeholder="再搜个关键词，例如 加班 / 社保 / 被裁 / 提成…" autocomplete="off"></div>
 <p class="fcount" id="fcount"></p>
+<p class="sharehint">你现在的筛选就写在网址里：复制地址栏的链接发给别人，他打开看到的是同一批结果。按 / 可以直接跳到搜索框。</p>
 <ul id="hits"></ul>
 
-<h2>四、全书目录（按板块）</h2>
+<h2>四、这些标记什么意思</h2>
+<p class="hint">每条建议前面都挂着几个标记，读之前花一分钟弄清楚，能省很多判断成本。</p>
+<div class="legend">
+  <div><b>性价比</b>：极高 = 花很少的钱、时间和精力就能换回明确好处；高 = 值得做，但要占一点时间或精力；一般 = 有条件再做，或收益取决于你所在的公司和行业。</div>
+  <div><b>成本</b>：钱 / 时间 / 精力 三样，写成 <code>钱=0 时间=少 精力=低</code>。钱=0 指不需要额外掏钱；时间是「少（顺手就做）/ 中（几小时或断续几天）/ 多（长期占用）」；精力是「低 / 中 / 高」，指要不要持续费神。</div>
+  <div><b>口径</b>：这条建议最终换回来的是什么——收入 / 职业寿命（能干得更久、更稳）/ 职业自由（能选择去哪、做什么）/ 时间精力（少加班、少内耗）。</div>
+  <div><b>证据等级</b>：A = 有法条、官方统计或权威报告直接支持；B = 官方数据经过推算，或多个来源互相印证；C = 没有官方数据，属于经验判断，看到 C 请结合自己情况。</div>
+  <div><b>来源</b>：只放能直接证明这条论点的官方文件、法条或统计，放着证明不了这条的一律不引；确实找不到官方数据的，就写明「未找到直接相关的官方数据」，不拿别的数据凑数。</div>
+</div>
+
+<h2>五、全书目录（按板块）</h2>
 <p class="hint">50 章分 7 个板块；点章名看正文（站内页面）。每章内部条目按性价比从高到低排。</p>
 {toc}
 
@@ -228,8 +274,27 @@ const CH = 'ch/';
 const ITEMS = {data_json};
 const BLK = {blk_json};
 const q = document.getElementById('q'), hits = document.getElementById('hits'), fcount = document.getElementById('fcount');
-const sel = {{'blk':new Set(), 'lv':new Set(), 'ev':new Set(), 'sc':new Set(), 'm':new Set(), 'tm':new Set(), 'en':new Set()}};
+const sel = {{'blk':new Set(), 'lv':new Set(), 'ev':new Set(), 'sc':new Set(), 'm':new Set(), 'tm':new Set(), 'en':new Set(), 'flag':new Set()}};
 const esc = s => String(s).replace(/[&<>"]/g, c => ({{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}}[c]));
+const hl = (s, kw) => kw ? esc(s).split(esc(kw)).join('<mark>' + esc(kw) + '</mark>') : esc(s);
+function syncUrl() {{
+  const parts = [];
+  for (const g in sel) sel[g].forEach(v => parts.push(g + '=' + encodeURIComponent(v)));
+  const kw = q.value.trim();
+  if (kw) parts.push('q=' + encodeURIComponent(kw));
+  history.replaceState(null, '', parts.length ? '#' + parts.join('&') : location.pathname);
+}}
+function readUrl() {{
+  const h = location.hash.replace(/^#/, '');
+  if (!h) return;
+  new URLSearchParams(h).forEach((v, k) => {{
+    if (k === 'q') {{ q.value = v; return; }}
+    if (!sel[k]) return;
+    sel[k].add(v);
+    const b = [...document.querySelectorAll('.chip')].find(x => x.dataset.g === k && x.dataset.v === v);
+    if (b) b.classList.add('on');
+  }});
+}}
 const CN = ['一','二','三','四','五','六','七'];
 
 function match(d) {{
@@ -240,6 +305,8 @@ function match(d) {{
   if (sel.m.size && !sel.m.has(d.m)) return false;
   if (sel.tm.size && !sel.tm.has(d.tm)) return false;
   if (sel.en.size && !sel.en.has(d.en)) return false;
+  if (sel.flag.has('r3') && !(d.srcs >= 3)) return false;
+  if (sel.flag.has('r0') && d.srcs > 0) return false;
   return true;
 }}
 
@@ -253,7 +320,7 @@ function render() {{
     hits.innerHTML = '<li class="empty">没有符合条件的条目，去掉一个条件再试。</li>';
   }} else {{
     hits.innerHTML = shown.map(d =>
-      `<li><a href="${{CH}}${{d.f}}.html#e${{d.e}}"><span class="cno">${{String(d.c).padStart(2,'0')}}-${{d.e}}</span> ${{esc(d.t)}}</a>`
+      `<li><a href="${{CH}}${{d.f}}.html#e${{d.e}}"><span class="cno">${{String(d.c).padStart(2,'0')}}-${{d.e}}</span> ${{hl(d.t, kw)}}</a>`
       + `<span class="tags"><span class="tag lv${{d.lv === '极高' ? ' hot' : ''}}">${{esc(d.lv)}}</span>`
       + `<span class="tag ev${{d.ev}}">${{esc(d.ev)}} 级</span>`
       + `<span class="tag">${{esc((d.sc || []).join(' / '))}}</span></span></li>`).join('')
@@ -261,6 +328,7 @@ function render() {{
   }}
   const on = Object.values(sel).reduce((a, s) => a + s.size, 0);
   fcount.textContent = '共 ' + ITEMS.length + ' 条，当前符合条件 ' + res.length + ' 条' + (on ? '（已选条件 ' + on + ' 个）' : '');
+  syncUrl();
 }}
 
 document.querySelectorAll('.chip').forEach(b => b.addEventListener('click', () => {{
@@ -275,6 +343,11 @@ document.querySelectorAll('.chip').forEach(b => b.addEventListener('click', () =
   render();
 }}));
 q.addEventListener('input', render);
+document.addEventListener('keydown', e => {{
+  if (e.key === '/' && document.activeElement !== q) {{ e.preventDefault(); q.focus(); }}
+  if (e.key === 'Escape' && document.activeElement === q) {{ q.value = ''; render(); q.blur(); }}
+}});
+readUrl();
 render();
 </script>
 </body>
