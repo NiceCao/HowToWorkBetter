@@ -2,8 +2,10 @@
 """生成《高性价比工作指南》导航页 index.html（自包含，无外部依赖）"""
 import json, html
 
+BASE = 'https://github.com/NiceCao/HowToWorkBetter/blob/main/book/'
 ch = {c['n']: c for c in json.load(open('data/chapters.json', encoding='utf-8'))}
 entries = json.load(open('data/entries.json', encoding='utf-8'))
+blocks = json.load(open('data/blocks.json', encoding='utf-8'))['blocks']
 
 # ---- 按阶段 ----
 stages = [
@@ -42,14 +44,14 @@ roles = [
 
 def chlink(n, text=None):
     c = ch[n]
-    return f'<a class="ch" href="book/{c["file"]}">{text or ("第 %d 章" % n)}</a>'
+    return f'<a class="ch" href="{BASE}{c["file"]}">{text or ("第 %d 章" % n)}</a>'
 
 def stage_card(title, desc, nums):
     inner = ""
     for n in sorted(nums):
         c = ch[n]
         short = c['h1'].split('：', 1)[-1]
-        inner += f'<li><a href="book/{c["file"]}"><b>{n:02d}</b> {html.escape(short)}</a></li>'
+        inner += f'<li><a href="{BASE}{c["file"]}"><b>{n:02d}</b> {html.escape(short)}</a></li>'
     return f'''<section class="card">
       <h3>{html.escape(title)}</h3>
       <p class="desc">{html.escape(desc)}</p>
@@ -67,12 +69,17 @@ def role_card(title, desc, nums):
       <p class="chips">{chips}</p>
     </section>'''
 
-# ---- 全书目录 ----
+# ---- 全书目录（按板块分组） ----
 toc = ""
-for n in sorted(ch):
-    c = ch[n]
-    cnt = sum(1 for e in entries if e['chapter'] == n)
-    toc += f'<li><a href="book/{c["file"]}"><b>{n:02d}</b> {html.escape(c["h1"].split(" ",1)[-1])}<span class="cnt">{cnt} 条</span></a></li>'
+for b in blocks:
+    items = ""
+    for n in b['chapters']:
+        c = ch[n]
+        cnt = sum(1 for e in entries if e['chapter'] == n)
+        items += f'<li><a href="{BASE}{c["file"]}"><b>{n:02d}</b> {html.escape(c["h1"].split(" ",1)[-1])}<span class="cnt">{cnt} 条</span></a></li>'
+    toc += (f'<h3 class="blk"><span class="bnum">板块{["一","二","三","四","五","六","七","八","九","十"][b["n"]-1]}</span>'
+            f'{html.escape(b["name"])}<span class="bdesc">{html.escape(b["desc"])}</span></h3>'
+            f'<ol class="toc">{items}</ol>')
 
 # ---- 全部条目（搜索用） ----
 data_json = json.dumps([{"c": e["chapter"], "e": e["entry"], "t": e["title"], "l": e["level"],
@@ -116,7 +123,10 @@ ul.chs b {{ color:var(--accent); font-variant-numeric:tabular-nums; margin-right
 a.ch {{ display:inline-block; text-decoration:none; color:var(--accent); background:var(--accent-soft); border-radius:999px; padding:3px 12px; font-size:13.5px; margin:3px 6px 3px 0; font-variant-numeric:tabular-nums; }}
 a.ch:hover {{ background:#f8e2ca; }}
 .soon {{ color:var(--ink2); font-size:13.5px; }}
-ol.toc {{ list-style:none; counter-reset:none; padding:0; margin:0; }}
+h3.blk {{ font-size:16.5px; margin:34px 0 4px; font-weight:600; }}
+h3.blk .bnum {{ display:inline-block; background:var(--accent-soft); color:var(--accent); border-radius:6px; padding:1px 9px; font-size:13px; margin-right:9px; vertical-align:1px; font-weight:600; }}
+h3.blk .bdesc {{ display:block; color:var(--ink2); font-size:13.5px; font-weight:400; margin:5px 0 0 0; }}
+ol.toc {{ list-style:none; counter-reset:none; padding:0; margin:0 0 6px; }}
 ol.toc li {{ border-bottom:1px solid var(--line); }}
 ol.toc a {{ display:flex; align-items:baseline; gap:10px; text-decoration:none; color:var(--ink); padding:11px 2px; font-size:15px; }}
 ol.toc a:hover {{ color:var(--accent); }}
@@ -159,9 +169,9 @@ footer a {{ color:var(--ink2); }}
 <div class="search"><input id="q" type="search" placeholder="搜 416 条建议…" autocomplete="off"></div>
 <ul id="hits"></ul>
 
-<h2>四、全书目录</h2>
-<p class="hint">50 章，每章 8–14 条，条目按性价比从高到低排。</p>
-<ol class="toc">{toc}</ol>
+<h2>四、全书目录（按板块）</h2>
+<p class="hint">50 章分 7 个板块；点章名到线上正文。每章内部条目按性价比从高到低排。</p>
+{toc}
 
 <footer>
   <p>内容参考《高性价比人生指南》（<a href="https://github.com/eternity4719/HowToLiveBetter">eternity4719/HowToLiveBetter</a>，CC BY 4.0）的写法与逻辑整理编写。本书文字同样以 CC BY 4.0 授权。</p>
@@ -169,6 +179,7 @@ footer a {{ color:var(--ink2); }}
 </footer>
 </div>
 <script>
+const BASE = 'https://github.com/NiceCao/HowToWorkBetter/blob/main/book/';
 const DATA = {data_json};
 const q = document.getElementById('q'), hits = document.getElementById('hits');
 function render(kw) {{
@@ -177,7 +188,7 @@ function render(kw) {{
   const res = DATA.filter(d => d.t.includes(kw) || d.l.includes(kw) || String(d.c).padStart(2,'0') === kw);
   if (!res.length) {{ hits.innerHTML = '<li class="empty">没有匹配的条目，换个词试试。</li>'; return; }}
   hits.innerHTML = res.slice(0, 60).map(d =>
-    `<li><a href="book/${{d.f}}.md">第 ${{String(d.c).padStart(2,'0')}} 章 · ${{d.e}}. ${{d.t}}</a><span class="lvl">${{d.l}}</span></li>`).join('')
+    `<li><a href="${{BASE}}${{d.f}}.md">第 ${{String(d.c).padStart(2,'0')}} 章 · ${{d.e}}. ${{d.t}}</a><span class="lvl">${{d.l}}</span></li>`).join('')
     + (res.length > 60 ? `<li class="empty">共 ${{res.length}} 条，显示前 60 条。</li>` : '');
 }}
 q.addEventListener('input', e => render(e.target.value));

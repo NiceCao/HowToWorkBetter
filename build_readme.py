@@ -28,8 +28,15 @@ for f in files:
 evA = E['A']; evB = E['B'] + E['B+'] + E['B-']; evC = E['C']
 lvH = L['极高']; lvM = L['高'] + L.get('高（帮你省钱=帮你赚钱）', 0); lvL = L['一般']
 
-toc = "\n".join(
-    f"{n}. [{title}](book/{fn})：{intro}（{cnt} 条）" for n, title, fn, intro, cnt in chapters)
+blocks = json.load(open('data/blocks.json', encoding='utf-8'))['blocks']
+CN = ["一", "二", "三", "四", "五", "六", "七", "八", "九", "十"]
+toc = ""
+for b in blocks:
+    toc += f"\n**板块{CN[b['n']-1]} · {b['name']}**（{b['desc']}）\n\n"
+    for n, title, fn, intro, cnt in chapters:
+        if n in b['chapters']:
+            toc += f"{n}. [{title}](book/{fn})：{intro}（{cnt} 条）\n"
+    toc += "\n"
 
 readme = f"""<div align="center">
 
@@ -57,7 +64,7 @@ readme = f"""<div align="center">
 
 导航页里还能直接搜关键词（「加班」「社保」「提成」「被裁」），跳到具体那一条。
 
-## 目录
+## 目录（按 7 个板块）
 
 {toc}
 
