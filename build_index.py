@@ -3,6 +3,7 @@
 import json, html
 
 BASE = 'https://github.com/NiceCao/HowToWorkBetter/blob/main/book/'
+BASECH = 'ch/'
 ch = {c['n']: c for c in json.load(open('data/chapters.json', encoding='utf-8'))}
 entries = json.load(open('data/entries.json', encoding='utf-8'))
 blocks = json.load(open('data/blocks.json', encoding='utf-8'))['blocks']
@@ -44,14 +45,14 @@ roles = [
 
 def chlink(n, text=None):
     c = ch[n]
-    return f'<a class="ch" href="{BASE}{c["file"]}">{text or ("第 %d 章" % n)}</a>'
+    return f'<a class="ch" href="{BASECH}{c["file"][:-3]}.html">{text or ("第 %d 章" % n)}</a>'
 
 def stage_card(title, desc, nums):
     inner = ""
     for n in sorted(nums):
         c = ch[n]
         short = c['h1'].split('：', 1)[-1]
-        inner += f'<li><a href="{BASE}{c["file"]}"><b>{n:02d}</b> {html.escape(short)}</a></li>'
+        inner += f'<li><a href="{BASECH}{c["file"][:-3]}.html"><b>{n:02d}</b> {html.escape(short)}</a></li>'
     return f'''<section class="card">
       <h3>{html.escape(title)}</h3>
       <p class="desc">{html.escape(desc)}</p>
@@ -76,22 +77,42 @@ for b in blocks:
     for n in b['chapters']:
         c = ch[n]
         cnt = sum(1 for e in entries if e['chapter'] == n)
-        items += f'<li><a href="{BASE}{c["file"]}"><b>{n:02d}</b> {html.escape(c["h1"].split(" ",1)[-1])}<span class="cnt">{cnt} 条</span></a></li>'
+        items += f'<li><a href="{BASECH}{c["file"][:-3]}.html"><b>{n:02d}</b> {html.escape(c["h1"].split(" ",1)[-1])}<span class="cnt">{cnt} 条</span></a></li>'
     toc += (f'<h3 class="blk"><span class="bnum">板块{["一","二","三","四","五","六","七","八","九","十"][b["n"]-1]}</span>'
             f'{html.escape(b["name"])}<span class="bdesc">{html.escape(b["desc"])}</span></h3>'
             f'<ol class="toc">{items}</ol>')
 
-# ---- 全部条目（搜索用） ----
-data_json = json.dumps([{"c": e["chapter"], "e": e["entry"], "t": e["title"], "l": e["level"],
-                         "f": ch[e["chapter"]]["file"].replace('.md','')} for e in entries],
-                       ensure_ascii=False)
+# ---- 全部条目（检索用，带元信息） ----
+items = json.load(open('data/items.json', encoding='utf-8'))
+data_json = json.dumps(items, ensure_ascii=False, separators=(',', ':'))
+blk_of = {c: b['n'] for b in blocks for c in b['chapters']}
+blk_json = json.dumps(blk_of)
+CN = ["一", "二", "三", "四", "五", "六", "七", "八", "九", "十"]
+
+
+def chips(group, label, options):
+    bs = ''.join(f'<button class="chip" data-g="{group}" data-v="{html.escape(str(v))}">{html.escape(str(t))}</button>'
+                 for v, t in options)
+    return f'<div class="fgroup"><span class="flabel">{label}</span>{bs}</div>'
+
+
+filters_html = (
+    chips('blk', '板块', [(b['n'], f"{CN[b['n'] - 1]} {b['name']}") for b in blocks])
+    + chips('lv', '性价比', [('极高', '极高'), ('高', '高'), ('一般', '一般')])
+    + chips('ev', '证据等级', [('A', 'A 级'), ('B', 'B 级'), ('C', 'C 级')])
+    + chips('sc', '换回来的是', [('收入', '收入'), ('职业寿命', '职业寿命'), ('职业自由', '职业自由'), ('时间精力', '时间精力')])
+    + chips('m', '要花的钱', [('不花钱', '不花钱'), ('少', '少'), ('中/多', '中/多')])
+    + chips('tm', '要花的时间', [('少', '少'), ('中', '中'), ('多', '多')])
+    + chips('en', '要耗的精力', [('少', '少'), ('中', '中'), ('多', '多')])
+    + '<div class="fgroup"><button class="chip reset" id="reset">清空筛选</button></div>'
+)
 
 tpl = f'''<!doctype html>
 <html lang="zh-CN">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>《高性价比工作指南》· 怎么用这本书</title>
+<title>《高性价比工作指南》· 检索与指路</title>
 <style>
 :root {{
   --ink:#1c1c1e; --ink2:#6b6b70; --line:#e8e8ec; --bg:#ffffff; --bg2:#f7f7f9;
@@ -141,6 +162,25 @@ input[type=search]:focus {{ outline:2px solid var(--accent-soft); border-color:v
 #hits a:hover {{ color:var(--accent); }}
 #hits .lvl {{ color:var(--ink2); font-size:12.5px; margin-left:8px; }}
 .empty {{ color:var(--ink2); font-size:14px; padding:16px 2px; }}
+.filters {{ margin:22px 0 4px; }}
+.fgroup {{ display:flex; flex-wrap:wrap; gap:7px; align-items:center; margin:0 0 10px; }}
+.flabel {{ color:var(--ink2); font-size:13px; min-width:76px; }}
+.chip {{ font:inherit; font-size:13.5px; color:var(--ink); background:var(--bg2); border:1px solid var(--line); border-radius:999px; padding:5px 13px; cursor:pointer; }}
+.chip:hover {{ border-color:var(--accent); color:var(--accent); }}
+.chip.on {{ background:var(--accent); border-color:var(--accent); color:#fff; font-weight:600; }}
+.chip.reset {{ background:transparent; border-style:dashed; color:var(--ink2); }}
+.fcount {{ color:var(--ink2); font-size:13px; margin:12px 0 0; }}
+#hits li {{ display:flex; align-items:baseline; gap:12px; }}
+#hits a {{ flex:1 1 auto; }}
+.cno {{ color:var(--accent); font-variant-numeric:tabular-nums; font-size:13px; margin-right:8px; }}
+.tags {{ flex:0 0 auto; white-space:nowrap; }}
+.tag {{ display:inline-block; font-size:12px; color:var(--ink2); background:var(--bg2); border-radius:6px; padding:1px 8px; margin-left:6px; }}
+.tag.lv {{ color:var(--accent); background:var(--accent-soft); }}
+.tag.lv.hot {{ color:#fff; background:var(--accent); }}
+.tag.evA {{ color:#1a7f37; background:#eaf7ee; }}
+.tag.evB {{ color:#8a6d00; background:#fdf6e3; }}
+.tag.evC {{ color:#8a4b00; background:#fdf1e5; }}
+@media (max-width:520px) {{ .tags {{ display:none; }} .flabel {{ min-width:100%; }} }}
 footer {{ margin-top:64px; padding-top:22px; border-top:1px solid var(--line); color:var(--ink2); font-size:13px; }}
 footer a {{ color:var(--ink2); }}
 @media (max-width:520px) {{ .wrap {{ padding:36px 18px 72px; }} header h1 {{ font-size:25px; }} }}
@@ -149,7 +189,7 @@ footer a {{ color:var(--ink2); }}
 <body>
 <div class="wrap">
 <header>
-  <h1>《高性价比工作指南》· 怎么用这本书</h1>
+  <h1>《高性价比工作指南》· 检索与指路</h1>
   <p class="lead">50 章、{len(entries)} 条建议，按「你现在在哪一步」和「你是做什么的」两条路进入。每条都写成一句能直接照做的建议，标了性价比档位和证据等级。</p>
   <p class="meta">找不到方向就用下面的搜索；想按章节顺序读，直接翻到最后一节的全书目录。</p>
 </header>
@@ -164,35 +204,78 @@ footer a {{ color:var(--ink2); }}
 {''.join(role_card(*r) for r in roles)}
 </div>
 
-<h2>三、搜一条试试</h2>
-<p class="hint">输入关键词，例如「加班」「社保」「被裁」「提成」。点结果跳到那一章。</p>
-<div class="search"><input id="q" type="search" placeholder="搜 416 条建议…" autocomplete="off"></div>
+<h2>三、按条件找</h2>
+<p class="hint">七组条件可以叠着用：先圈板块，再挑性价比档位、证据等级、你要换回来的东西，以及愿不愿意花钱、花时间、耗精力。点一条结果，直接跳到那一章的正文位置。</p>
+<div class="filters">
+{filters_html}
+</div>
+<div class="search"><input id="q" type="search" placeholder="再搜个关键词，例如 加班 / 社保 / 被裁 / 提成…" autocomplete="off"></div>
+<p class="fcount" id="fcount"></p>
 <ul id="hits"></ul>
 
 <h2>四、全书目录（按板块）</h2>
-<p class="hint">50 章分 7 个板块；点章名到线上正文。每章内部条目按性价比从高到低排。</p>
+<p class="hint">50 章分 7 个板块；点章名看正文（站内页面）。每章内部条目按性价比从高到低排。</p>
 {toc}
 
 <footer>
+  <p>仓库：<a href="https://github.com/NiceCao/HowToWorkBetter">github.com/NiceCao/HowToWorkBetter</a>（章节原文也在这里的 <code>book/</code>）。</p>
   <p>内容参考《高性价比人生指南》（<a href="https://github.com/eternity4719/HowToLiveBetter">eternity4719/HowToLiveBetter</a>，CC BY 4.0）的写法与逻辑整理编写。本书文字同样以 CC BY 4.0 授权。</p>
   <p>涉及法律、医疗、投资的条目仅供参考，不构成法律、医疗、投资建议。具体金额与时限以当地主管部门最新规定为准。</p>
 </footer>
 </div>
 <script>
-const BASE = 'https://github.com/NiceCao/HowToWorkBetter/blob/main/book/';
-const DATA = {data_json};
-const q = document.getElementById('q'), hits = document.getElementById('hits');
-function render(kw) {{
-  kw = (kw || '').trim();
-  if (!kw) {{ hits.innerHTML = '<li class="empty">输入关键词开始搜；清空即关闭结果。</li>'; return; }}
-  const res = DATA.filter(d => d.t.includes(kw) || d.l.includes(kw) || String(d.c).padStart(2,'0') === kw);
-  if (!res.length) {{ hits.innerHTML = '<li class="empty">没有匹配的条目，换个词试试。</li>'; return; }}
-  hits.innerHTML = res.slice(0, 60).map(d =>
-    `<li><a href="${{BASE}}${{d.f}}.md">第 ${{String(d.c).padStart(2,'0')}} 章 · ${{d.e}}. ${{d.t}}</a><span class="lvl">${{d.l}}</span></li>`).join('')
-    + (res.length > 60 ? `<li class="empty">共 ${{res.length}} 条，显示前 60 条。</li>` : '');
+const CH = 'ch/';
+const ITEMS = {data_json};
+const BLK = {blk_json};
+const q = document.getElementById('q'), hits = document.getElementById('hits'), fcount = document.getElementById('fcount');
+const sel = {{'blk':new Set(), 'lv':new Set(), 'ev':new Set(), 'sc':new Set(), 'm':new Set(), 'tm':new Set(), 'en':new Set()}};
+const esc = s => String(s).replace(/[&<>"]/g, c => ({{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}}[c]));
+const CN = ['一','二','三','四','五','六','七'];
+
+function match(d) {{
+  if (sel.blk.size && !sel.blk.has(String(BLK[d.c]))) return false;
+  if (sel.lv.size && !sel.lv.has(d.lv)) return false;
+  if (sel.ev.size && !sel.ev.has(d.ev)) return false;
+  if (sel.sc.size && !(d.sc || []).some(s => sel.sc.has(s))) return false;
+  if (sel.m.size && !sel.m.has(d.m)) return false;
+  if (sel.tm.size && !sel.tm.has(d.tm)) return false;
+  if (sel.en.size && !sel.en.has(d.en)) return false;
+  return true;
 }}
-q.addEventListener('input', e => render(e.target.value));
-render('');
+
+function render() {{
+  const kw = q.value.trim();
+  let res = ITEMS.filter(match);
+  if (kw) res = res.filter(d => d.t.includes(kw) || String(d.e) === kw
+    || ('第' + String(d.c).padStart(2, '0') + '章').includes(kw) || String(d.c).padStart(2, '0') === kw);
+  const shown = res.slice(0, 80);
+  if (!res.length) {{
+    hits.innerHTML = '<li class="empty">没有符合条件的条目，去掉一个条件再试。</li>';
+  }} else {{
+    hits.innerHTML = shown.map(d =>
+      `<li><a href="${{CH}}${{d.f}}.html#e${{d.e}}"><span class="cno">${{String(d.c).padStart(2,'0')}}-${{d.e}}</span> ${{esc(d.t)}}</a>`
+      + `<span class="tags"><span class="tag lv${{d.lv === '极高' ? ' hot' : ''}}">${{esc(d.lv)}}</span>`
+      + `<span class="tag ev${{d.ev}}">${{esc(d.ev)}} 级</span>`
+      + `<span class="tag">${{esc((d.sc || []).join(' / '))}}</span></span></li>`).join('')
+      + (res.length > shown.length ? `<li class="empty">共 ${{res.length}} 条，显示前 ${{shown.length}} 条；再选一个条件缩小范围。</li>` : '');
+  }}
+  const on = Object.values(sel).reduce((a, s) => a + s.size, 0);
+  fcount.textContent = '共 ' + ITEMS.length + ' 条，当前符合条件 ' + res.length + ' 条' + (on ? '（已选条件 ' + on + ' 个）' : '');
+}}
+
+document.querySelectorAll('.chip').forEach(b => b.addEventListener('click', () => {{
+  if (b.id === 'reset') {{
+    Object.values(sel).forEach(s => s.clear());
+    document.querySelectorAll('.chip.on').forEach(x => x.classList.remove('on'));
+    q.value = ''; render(); return;
+  }}
+  const g = b.dataset.g, v = b.dataset.v;
+  if (sel[g].has(v)) {{ sel[g].delete(v); b.classList.remove('on'); }}
+  else {{ sel[g].add(v); b.classList.add('on'); }}
+  render();
+}}));
+q.addEventListener('input', render);
+render();
 </script>
 </body>
 </html>
