@@ -168,7 +168,7 @@ def parse_entry(head_line, body):
     if si is None:
         issues.append(('缺来源', '没有「来源：」块',
                        '补「**来源：**」，放 1–3 条能直接证明本条的官方来源；没有就写'
-                       '「未找到直接相关的官方数据」'))
+                       '「未找到直接相关的官方数据」') or re.search(r'^\s*\**\s*来源\s*[:：]\s*\**\s*无\s*[。.]?\s*$', src_txt, re.M))
     else:
         blk = [body[si]]
         j = si + 1
@@ -185,12 +185,12 @@ def parse_entry(head_line, body):
         src_txt = '\n'.join(blk)
         src_links = [clean_url(u) for u in URL_RE.findall(src_txt)]
         src_links = [u for u in src_links if u]
-        if not src_links and '未找到' not in src_txt:
+        if not src_links and '未找到' not in src_txt and not re.search(r'^\s*\**\s*来源\s*[:：]\s*\**\s*无\s*[。.]?\s*$', src_txt, re.M):
             issues.append((
                 '来源无据',
-                '来源块既没有 http(s) 链接，也没有明写「未找到…官方数据」',
+                '来源块既没有 http(s) 链接，也没有写「无」（或旧的「未找到…官方数据」）',
                 '补一条能直接证明本条的官方来源，或按「没有能证明本条的官方来源」'
-                '明写「未找到直接相关的官方数据」',
+                '来源栏写「无」（或旧的「未找到…官方数据」）',
             ))
 
     return {
@@ -277,7 +277,7 @@ def render_report(chapters, urls_result):
     L.append('- 条目数：%d' % n_entries)
     L.append('- 正文超 %d 字的条目（提示，只为方便阅读，不是必须压到）：%d' % (MAX_ENTRY, len(over_entry)))
     L.append('- 缺元信息条目：%d' % len(miss_meta))
-    L.append('- 无来源条目（无链接且未写「未找到…官方数据」）：%d' % len(no_source))
+    L.append('- 无来源条目（无链接且未写「无」）：%d' % len(no_source))
     L.append('- 来源链接总数：%d（去重 %d）' % (len(all_links), len(uniq_links)))
     L.append('- 附：说人话缺失 %d 条、说人话超 %d 字 %d 条' % (len(miss_plain), MAX_PLAIN, len(over_plain)))
     L.append('')
