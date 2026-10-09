@@ -13,7 +13,7 @@ r"""把钉钉文档导出的线上正文（out/v2/chNN.md）应用到仓库的 b
 import glob, json, os, re, sys
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-LIVE_DIR = '/home/ubuntu/projects/work-guide-50/out/v2'   # 钉钉导出目录（书稿工程目录，不进本仓库）
+LIVE_DIR = os.environ.get('LIVE_DIR', '/home/ubuntu/projects/work-guide-50/out/v3')   # 钉钉导出目录（书稿工程目录，不进本仓库）
 os.chdir(ROOT)
 
 CH = {c['n']: c for c in json.load(open('data/chapters.json', encoding='utf-8'))}
