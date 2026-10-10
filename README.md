@@ -26,6 +26,11 @@
 [上班宝 · 工作指南](https://shangbanbao.com/work.html)（在线检索页的移动版）
 
 </td></tr>
+<tr><td align="right"><b>纠错 / 建议</b></td><td align="left">
+
+内容有错、过时，或者你想补一条：[提 Issue](https://github.com/NiceCao/HowToWorkBetter/issues) 最好，也方便别人看到；也可以发邮件到 **heynights@vip.qq.com**（作者邮箱），我会看。
+
+</td></tr>
 </table>
 
 </div>

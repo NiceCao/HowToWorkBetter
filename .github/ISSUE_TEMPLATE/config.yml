@@ -4,3 +4,6 @@ contact_links:
   - name: 先搜一下书里有没有这条
     url: https://nicecao.github.io/HowToWorkBetter/
     about: 在线检索页能按关键词、章节、类别筛。想提的问题多半已经有答案了，先搜一下再来提 issue。
+  - name: 不想公开提？发邮件给作者
+    url: mailto:heynights@vip.qq.com
+    about: 涉隐私、不想公开的纠错或建议，可以直接发邮件到 heynights@vip.qq.com。
