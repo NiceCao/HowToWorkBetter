@@ -40,6 +40,8 @@ def api(url, method="GET", data=None, headers=None, raw=False):
         req.add_header(k, v)
     with urllib.request.urlopen(req, timeout=120) as r:
         body = r.read()
+    if not body:
+        return None  # DELETE 之类返回 204 空体，不能当作 JSON 解析
     return json.loads(body) if not raw else body
 
 
