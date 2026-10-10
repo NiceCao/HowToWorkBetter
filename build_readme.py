@@ -109,7 +109,7 @@ readme = f"""<div align="center">
 <table>
 <tr><td align="right"><b>下载</b></td><td align="left">
 
-[PDF](https://github.com/NiceCao/HowToWorkBetter/releases/download/epub-latest/HowToWorkBetter.pdf) · [EPUB](https://github.com/NiceCao/HowToWorkBetter/releases/download/epub-latest/HowToWorkBetter.epub) · [离线单文件（HTML）](https://github.com/NiceCao/HowToWorkBetter/releases/download/epub-latest/HowToWorkBetter.html)
+[PDF](https://github.com/NiceCao/HowToWorkBetter/releases/download/epub-latest/HowToWorkBetter.pdf)（带书签，目录可点） · [EPUB](https://github.com/NiceCao/HowToWorkBetter/releases/download/epub-latest/HowToWorkBetter.epub) · [离线单文件（HTML）](https://github.com/NiceCao/HowToWorkBetter/releases/download/epub-latest/HowToWorkBetter.html)
 
 </td></tr>
 <tr><td align="right"><b>手机上读</b></td><td align="left">
