@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""生成 docs/引用对照.md —— 《高性价比工作指南》416 条建议的逐条来源对照表。
+"""生成 docs/引用对照.md —— 《高性价比工作指南》逐条来源对照表（条数按实际统计）。
 
 把每条建议「来源：」里列出的引用摊开（机构/文件名 + 链接），按章分组，
 便于人工一眼看出「这条的引用能不能证明这条论点」。
@@ -162,7 +162,7 @@ def main():
         sections.append("## {}\n\n{}\n".format(heading, "\n".join(ch_lines)))
 
     header = []
-    header.append("# 引用对照表（416 条建议 · 逐条来源）\n")
+    header.append(f"# 引用对照表（{total_items} 条建议 · 逐条来源）\n")
     header.append("本文件由 `tools/build_refs.py` 生成，请勿手改；重复运行结果一致（幂等）。")
     header.append("把每条建议「来源：」里列出的引用摊开，便于人工核对"
                   "「这条的引用能不能证明这条论点」。\n")

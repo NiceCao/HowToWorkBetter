@@ -2,6 +2,17 @@
 """生成《高性价比工作指南》导航页 index.html（自包含，无外部依赖）"""
 import json, html
 
+# 动态统计：章数与条目数（标题/描述里用，避免写死）
+try:
+    NCH = len(json.load(open("data/chapters.json", encoding="utf-8")))
+except Exception:
+    NCH = 50
+try:
+    _it = json.load(open("data/items.json", encoding="utf-8"))
+    NIT = len(_it) if isinstance(_it, list) else len(_it.get("items", []))
+except Exception:
+    NIT = 0
+
 BASE = 'https://github.com/NiceCao/HowToWorkBetter/blob/main/book/'
 BASECH = 'ch/'
 ch = {c['n']: c for c in json.load(open('data/chapters.json', encoding='utf-8'))}
@@ -113,18 +124,18 @@ tpl = f'''<!doctype html>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>《高性价比工作指南》· 50 章 416 条，按阶段、职业和板块找建议</title>
-<meta name="description" content="写给普通打工人的工作指南：50 章、416 条建议，每条写明要花掉什么、能换回什么、证据有多硬。可以按你现在在哪一步、你是做什么的、或按板块找。">
+<title>《高性价比工作指南》· {NCH} 章 {NIT} 条，按阶段、职业和板块找建议</title>
+<meta name="description" content="写给普通打工人的工作指南：{NCH} 章、{NIT} 条建议，每条写明要花掉什么、能换回什么、证据有多硬。可以按你现在在哪一步、你是做什么的、或按板块找。">
 <link rel="canonical" href="https://nicecao.github.io/HowToWorkBetter/">
 <meta property="og:type" content="website">
-<meta property="og:title" content="高性价比工作指南 · 50 章 416 条">
+<meta property="og:title" content="高性价比工作指南 · {NCH} 章 {NIT} 条">
 <meta property="og:description" content="每条建议都写明要花掉什么、能换回什么、证据有多硬；按阶段、按职业、按板块都能找。">
 <meta property="og:url" content="https://nicecao.github.io/HowToWorkBetter/">
 <meta property="og:image" content="https://nicecao.github.io/HowToWorkBetter/og.png">
 <meta name="twitter:card" content="summary_large_image">
 <script type="application/ld+json">
 {{"@context":"https://schema.org","@type":"Book","name":"高性价比工作指南",
-"description":"写给普通打工人的工作指南，50 章 416 条建议，每条写明成本、收益和证据等级。",
+"description":"写给普通打工人的工作指南，{NCH} 章 {NIT} 条建议，每条写明成本、收益和证据等级。",
 "inLanguage":"zh-CN","url":"https://nicecao.github.io/HowToWorkBetter/",
 "image":"https://nicecao.github.io/HowToWorkBetter/og.png",
 "author":{{"@type":"Person","name":"作者"}},"license":"https://creativecommons.org/licenses/by/4.0/"}}
