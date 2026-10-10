@@ -243,8 +243,8 @@ mark {{ background:#fff2c2; color:inherit; border-radius:3px; padding:0 2px; }}
 <div class="wrap">
 <header>
   <h1>《高性价比工作指南》· 检索与指路</h1>
-  <p class="lead">50 章、{len(entries)} 条建议，按「你现在在哪一步」和「你是做什么的」两条路进入。每条都写成一句能直接照做的建议，标了性价比档位和证据等级。</p>
-  <p class="meta">找不到方向就用下面的搜索；想按章节顺序读，直接翻到最后一节的全书目录。</p>
+  <p class="lead">{NCH} 章、{len(entries)} 条建议，按「你现在在哪一步」和「你是做什么的」两条路进入。每条都写成一句能直接照做的建议，标了性价比档位和证据等级。</p>
+  <p class="meta">没有明确方向，就用第三节的搜索框直接搜关键词；想按章节顺序读，翻到最后一节的「全书目录」。</p>
   <nav class="entry">
     <a href="#find">在线检索</a>
     <a href="https://github.com/NiceCao/HowToWorkBetter/releases/download/epub-latest/HowToWorkBetter.pdf">下载 PDF</a>
