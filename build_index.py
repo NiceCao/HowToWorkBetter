@@ -144,6 +144,9 @@ tpl = f'''<!doctype html>
 :root {{
   --ink:#1c1c1e; --ink2:#6b6b70; --line:#e8e8ec; --bg:#ffffff; --bg2:#f7f7f9;
   --accent:#e8730c; --accent-soft:#fdf1e5;
+  /* 标题用思源宋体，正文用思源黑体；两款均为开源字体（SIL OFL），装了就用，没装自动落到系统宋/黑体 */
+  --serif:"Source Han Serif SC","Noto Serif CJK SC","Noto Serif SC","Songti SC","SimSun",serif;
+  --sans:"Source Han Sans SC","Noto Sans CJK SC","Noto Sans SC","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
 }}
 * {{ box-sizing:border-box; }}
 html {{ -webkit-text-size-adjust:100%; }}
@@ -151,16 +154,16 @@ h1, h2, h3, p, li, a {{ word-break:keep-all; overflow-wrap:break-word; }}
 header h1, h2, .card h3, .rcard h3 {{ text-wrap:balance; }}
 body {{
   margin:0; background:var(--bg); color:var(--ink);
-  font:16px/1.75 -apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Source Han Sans SC",sans-serif;
+  font:16px/1.75 var(--sans);
 }}
 .wrap {{ max-width:920px; margin:0 auto; padding:56px 22px 96px; }}
-header h1 {{ font-size:30px; line-height:1.35; letter-spacing:-.01em; margin:0 0 14px; }}
+header h1 {{ font-family:var(--serif); font-weight:700; font-size:31px; line-height:1.4; letter-spacing:.01em; margin:0 0 14px; }}
 header p.lead {{ color:var(--ink2); font-size:15px; margin:0 0 6px; }}
 .meta {{ color:var(--ink2); font-size:13px; margin-top:18px; }}
-h2 {{ font-size:20px; margin:56px 0 6px; letter-spacing:-.01em; }}
+h2 {{ font-family:var(--serif); font-weight:700; font-size:21px; margin:56px 0 6px; letter-spacing:.01em; }}
 h2 + p.hint {{ color:var(--ink2); font-size:14px; margin:0 0 20px; }}
 .card, .rcard {{ border:1px solid var(--line); border-radius:14px; padding:20px 22px; margin:14px 0; background:var(--bg); }}
-.card h3, .rcard h3 {{ font-size:17px; margin:0 0 6px; }}
+.card h3, .rcard h3 {{ font-family:var(--serif); font-weight:700; font-size:17.5px; margin:0 0 6px; line-height:1.5; }}
 .desc {{ color:var(--ink2); font-size:14px; margin:0 0 14px; }}
 ul.chs {{ list-style:none; padding:0; margin:0; display:grid; grid-template-columns:repeat(auto-fill,minmax(255px,1fr)); gap:8px 18px; }}
 ul.chs a {{ display:block; text-decoration:none; color:var(--ink); font-size:14.5px; padding:5px 0; border-bottom:1px dashed transparent; }}

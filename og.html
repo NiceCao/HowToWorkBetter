@@ -1,29 +1,42 @@
 <!doctype html>
 <html lang="zh-CN"><head><meta charset="utf-8">
 <style>
+  /* 字体：标题用思源宋体（Source Han Serif / Noto Serif CJK SC），正文用思源黑体（Source Han Sans / Noto Sans CJK SC），
+     两款都是开源字体（SIL OFL），可商用。改图时只要系统装了 fonts-noto-cjk / fonts-noto-cjk-extra 就能渲染。 */
   * { box-sizing: border-box; margin: 0; }
-  body { width: 1200px; height: 630px; background: #fffaf4; color: #1c1c1e;
-    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
-    display: flex; flex-direction: column; justify-content: space-between; padding: 74px 84px 66px; }
-  .kicker { color: #e8730c; font-size: 25px; letter-spacing: .12em; font-weight: 600; }
-  h1 { font-size: 92px; line-height: 1.14; letter-spacing: -.02em; margin: 20px 0 0; font-weight: 700; }
-  p.lead { font-size: 30px; line-height: 1.6; color: #4a4a50; margin-top: 26px; max-width: 940px; }
-  .row { display: flex; align-items: flex-end; justify-content: space-between; border-top: 2px solid #f0e3d4; padding-top: 26px; }
-  .tags { font-size: 23px; color: #6b6b70; line-height: 1.7; }
-  .tags b { color: #1c1c1e; font-weight: 600; }
-  .url { font-size: 25px; color: #e8730c; font-weight: 600; }
-  .badge { display: inline-block; background: #fdf1e5; color: #e8730c; border-radius: 10px; padding: 4px 14px; font-size: 22px; margin-right: 10px; }
+  :root {
+    --serif: "Source Han Serif SC", "Noto Serif CJK SC", "Noto Serif SC", "Songti SC", serif;
+    --sans: "Source Han Sans SC", "Noto Sans CJK SC", "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
+    --ink: #1b1b1f; --ink2: #55555c; --line: #efe2d4; --accent: #d96a12; --bg: #fffaf6;
+  }
+  body { width: 1200px; height: 630px; background: var(--bg); color: var(--ink);
+    font-family: var(--sans); display: flex; flex-direction: column; justify-content: space-between;
+    padding: 76px 86px 62px; -webkit-font-smoothing: antialiased; }
+  .kicker { color: var(--accent); font-size: 24px; letter-spacing: .16em; font-weight: 500; }
+  h1 { font-family: var(--serif); font-size: 94px; line-height: 1.22; letter-spacing: .01em;
+    font-weight: 700; margin: 22px 0 0; }
+  .lead { font-size: 30px; line-height: 1.65; color: var(--ink2); margin-top: 30px; letter-spacing: .01em;
+    white-space: nowrap; }
+  .row { display: flex; align-items: flex-end; justify-content: space-between;
+    border-top: 2px solid var(--line); padding-top: 30px; gap: 48px; }
+  .tags { font-size: 23px; color: #6e6e75; line-height: 1.75; flex: 1 1 auto; }
+  .tags b { color: var(--ink); font-weight: 600; }
+  .tags .idx { margin-top: 10px; font-size: 21px; letter-spacing: .01em; white-space: nowrap; }
+  .url { font-size: 24px; color: var(--accent); font-weight: 500; letter-spacing: .02em;
+    flex: 0 0 auto; white-space: nowrap; }
+  .badge { display: inline-block; background: #fdf0e3; color: var(--accent); border-radius: 999px;
+    padding: 5px 18px; font-size: 22px; margin-right: 12px; }
 </style></head>
 <body>
   <div>
     <div class="kicker">写给普通打工人</div>
     <h1>高性价比<br>工作指南</h1>
-    <p class="lead">50 章、416 条建议，每条写明要花掉什么、能换回什么、证据有多硬。</p>
+    <p class="lead">每条建议都写明：要花掉什么、能换回什么、证据有多硬。</p>
   </div>
   <div class="row">
     <div class="tags">
       <div><span class="badge">按阶段</span><span class="badge">按职业</span><span class="badge">按板块</span></div>
-      <div style="margin-top:12px">选行业 · 谈钱 · 站稳 · 晋升 · <b>被裁跳槽离职</b> · 社保退休</div>
+      <div class="idx">选行业 · 谈钱 · 站稳 · 晋升 · <b>被裁跳槽离职</b> · 社保退休</div>
     </div>
     <div class="url">nicecao.github.io/HowToWorkBetter</div>
   </div>
