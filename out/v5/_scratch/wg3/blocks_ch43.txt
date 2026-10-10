@@ -1,0 +1,163 @@
+  0 | mv0m32px9m1bx2q1x4 | heading          | 第43章 职场维权：被欺负了怎么办
+  1 | mv0w6xaaocty2g9rvii | ?blockType,index,id | 
+  2 | mv0m32pyhwpq9h9fiwv | ?blockType,index,id,unknown | 
+  3 | mv0m32py86s6bszkkkg | heading          | 极高性价比
+  4 | mv0m32pyughui33au8 | heading          | 1. 先按事情类型选受理渠道和时效，再决定是投诉、仲裁还是起诉
+  5 | mv0m32pytoasei0m0yp | ?blockType,index,id | 
+  6 | mv165ooczsp4adbdn7q | paragraph        | 说人话： 被公司侵犯权益，先分清是哪一类事、再找对部门，能少跑冤枉路。欠薪、违法辞退、不给加班费、没签劳动合同属于劳动争议，可以向劳动争议仲裁委员会申请仲裁、不收费；社会保险和住房
+  7 | mv165ooc04nkovrdb1mq | paragraph        | 为什么 / 怎么做：
+  8 | mv165ooc2fnyqah1dui | unorderedList    | 分部门：拖欠工资、少发加班费、违法解除的补偿或赔偿金、未签劳动合同的二倍工资 → 劳动人事争议仲裁委员会；社保没缴或少缴 → 社保经办机构或税务部门；公积金没缴或少缴 → 住房公积
+  9 | mv165oocg52vnpus3av | unorderedList    | 监察和仲裁可以并行：公司既拖欠工资又违法解除的，可一边向劳动监察投诉要工资、一边申请仲裁要赔偿。
+ 10 | mv165ooccega1dtroyd | unorderedList    | 时效三处：劳动仲裁 1 年，从知道或应当知道被侵害之日起算，劳动关系存续期间的欠薪不受这 1 年限制、关系终止的从终止之日起 1 年内提出；用工违法行为超过 2 年未被发现或举报的
+ 11 | mv1mwvk6lt0rje23qi | unorderedList    | 可申请仲裁的争议分六类：确认劳动关系；订立、履行、变更、解除和终止劳动合同；除名、辞退和辞职、离职；工作时间、休息休假、社会保险、福利、培训以及劳动保护；劳动报酬、工伤医疗费、经济
+ 12 | mv165ooczedj5kt16if | paragraph        | 来源：
+ 13 | mv165ood5acycxfkanm | unorderedList    | 全国人民代表大会常务委员会（2007）. 中华人民共和国劳动争议调解仲裁法（第二条、第二十七条）. 中国人大网. http://www.npc.gov.cn/npc/c12435/
+ 14 | mv165oodt6h7izfey1n | unorderedList    | 国务院（2004）. 劳动保障监察条例（第十条、第十一条、第二十条）. 国家税务总局广东省税务局转载. https://guangdong.chinatax.gov.cn/gdsw
+ 15 | mv165ood1jg10rz11at | unorderedList    | 国务院（2010修订）. 工伤保险条例（第十七条）. 武汉市人民政府国有资产监督管理委员会转载. https://gzw.wuhan.gov.cn/zwgk/zcwj/zcfg/2
+ 16 | mv1mwsggm0q18qo9m4 | unorderedList    | 最高人民法院（2020）. 关于审理劳动争议案件适用法律问题的解释（一）（法释〔2020〕26号，第二条）. 中华人民共和国最高人民法院. https://www.court.go
+ 17 | mv165oodj61zc02nsw | paragraph        | 限制与争议： 社会保险补缴没有全国统一的时效规定，《社会保险法》未规定补缴时限，《劳动保障监察条例》的 2 年是劳动监察查处的期限、不是补缴的期限；实践中各地口径不一，有的按 2 
+ 18 | mv0m32q52xm8t5j8alx | ?blockType,index,id,unknown | 
+ 19 | mv0m32q6kozqf4zgaja | heading          | 2. 从入职起按四类留证据，原件不要只留截图
+ 20 | mv0m32q6589bwspdoa3 | ?blockType,index,id | 
+ 21 | mv165djj2x16zqf9fy7 | paragraph        | 说人话： 劳动纠纷里能拿回多少，很大程度上取决于你手里有多少能对得上的证据，不少人道理站得住，却因为拿不出记录而吃亏。证据从入职起就按劳动关系、工资报酬、工作内容、公司违法四类攒；
+ 22 | mv165djjwrph8k3sywd | paragraph        | 为什么 / 怎么做：
+ 23 | mv165djk5nlbrhovymd | unorderedList    | 四类材料：劳动关系类包括劳动合同、录用通知、工牌、社保或公积金缴费记录、工资银行流水；工资报酬类包括工资条、带交易对手名称的银行流水、奖金和提成的书面约定、薪酬制度；工作内容类包括
+ 24 | mv165djko05ygj4xh9 | unorderedList    | 留证做法：聊天记录保留原始载体，不删、不换手机，换机做完整迁移，截图只能辅助；工作场所的谈话录音一般不因未经对方同意就无效，但不要进入对方家中或私密场所录制；重要邮件转发私人邮箱备
+ 25 | mv165djkl31ycky1b6g | unorderedList    | 举证责任：一般由提出主张的一方举证；与争议事项有关的证据由用人单位掌握管理的，由用人单位提供，不提供要承担不利后果，常见于解除劳动合同、减少劳动报酬、计算工作年限，以及最近两年的考
+ 26 | mv1mwopdkieixaji9nj | unorderedList    | 电子数据要留原件：手机短信、电子邮件、即时通信和通讯群组的信息属于电子数据，作为证据应当提供原件，与原件一致的副本或直接来源于电子数据的打印件都视为原件；存有疑点的电子数据不能单独
+ 27 | mv1mwopem2ztju6pchj | unorderedList    | 三类材料自己留、两类记录公司举证：自己重点留劳动关系、工资数额、公司违法三类材料；考勤和工资支付记录属于公司掌握管理的证据，由公司提供、不提供要承担不利后果，主张加班费时先用自己的
+ 28 | mv165djkl7p31sggk38 | paragraph        | 来源：
+ 29 | mv165djkig0bp8f10r9 | unorderedList    | 全国人民代表大会常务委员会（2007）. 中华人民共和国劳动争议调解仲裁法（第六条）. 中国人大网. http://www.npc.gov.cn/npc/c12435/200712
+ 30 | mv165djkd86wiswoafh | unorderedList    | 最高人民法院（2020）. 关于审理劳动争议案件适用法律问题的解释（一）（第四十四条）. 中华人民共和国最高人民法院. https://www.court.gov.cn/fabu-
+ 31 | mv165djke655u3yea1u | unorderedList    | 人力资源社会保障部、最高人民法院（2025）. 关于联合发布第四批劳动人事争议典型案例的通知. 中国就业网. https://chinajob.mohrss.gov.cn/c/20
+ 32 | mv1mwm50tqr685cntfo | unorderedList    | 最高人民法院. 关于民事诉讼证据的若干规定（法释〔2019〕19号，第十四条、第十五条、第九十条、第九十三条、第九十四条）. 中华人民共和国最高人民法院. https://www.
+ 33 | mv1mwm50bkf3eptump | unorderedList    | 劳动部（1994）. 工资支付暂行规定（第六条）. 岳阳市人力资源和社会保障局转载. https://rsj.yueyang.gov.cn/7751/65001/content_1
+ 34 | mv165djkowjqf36p1j | paragraph        | 限制与争议： 录音的合法性各地尺度不一：不是以严重侵害他人合法权益、违反法律禁止性规定或严重违背公序良俗的方式取得，一般可以作为认定事实的依据，擅自录制他人隐私内容可能不被采信。电
+ 35 | mv0m32qb17u3fez4jk | ?blockType,index,id,unknown | 
+ 36 | mv0m32qbp16nbu3qej9 | heading          | 3. 公司没按真实工资缴社保或公积金时，向经办机构投诉并要求补缴
+ 37 | mv0m32qbojuu69nxvae | ?blockType,index,id | 
+ 38 | mv16531nvraipipmh8r | paragraph        | 说人话： 公司长期按最低基数缴社保、或干脆不缴，可以投诉要求补缴。这两件事走行政渠道、不经过劳动仲裁，材料简单，处理速度通常也比仲裁快。
+ 39 | mv16531n4r0mu1is8dp | paragraph        | 为什么 / 怎么做：
+ 40 | mv16531ofv4frjqshyn | unorderedList    | 社保：备身份证、劳动合同、工资银行流水、社保缴费记录；向社保经办机构或税务部门投诉，社保费现由税务部门征收；不少地方支持线上投诉，也可拨 12333；处理结果是责令限期补缴，逾期不
+ 41 | mv16531ojb1e4kanxcl | unorderedList    | 公积金：备身份证、劳动合同、工资银行流水、公积金缴存明细；向当地住房公积金管理中心投诉，也可拨 12329；处理结果是责令限期缴存，逾期仍不缴存的可以申请法院强制执行。
+ 42 | mv16531o9zz6qkig7nq | unorderedList    | 相对容易的原因：事实核对简单，有合同和工资流水就能看出缴费基数是否低于实际工资；走行政程序不必先仲裁；单位不缴会被责令限期办理并罚款，还可能影响信用记录。
+ 43 | mv16531pp1xc9np0ps | paragraph        | 来源：
+ 44 | mv16531pxt9r3som2xa | unorderedList    | 全国人民代表大会常务委员会（2010）. 中华人民共和国社会保险法（第六十条、第六十三条、第八十六条）. 中国人大网. http://www.npc.gov.cn/npc/c124
+ 45 | mv16531pki0kv00ca68 | unorderedList    | 国务院（2026修订）. 住房公积金管理条例（第十八条、第三十九条、第四十条）. 中国政府网. https://www.gov.cn/zhengce/content/202608/
+ 46 | mv16531pwkgpxgi8p2 | paragraph        | 限制与争议： 社保补缴时限《社会保险法》没有规定，实践中各地口径不一，有的只追 2 年、有的按实际在职期间追缴；公积金条例本身没规定追缴时限，部分地方按 2 到 3 年操作。202
+ 47 | mv0m32qjb6zs9jbzcdd | ?blockType,index,id,unknown | 
+ 48 | mv0m32qj214ejv6spp1 | heading          | 4. 被拖欠工资时按催告、劳动监察、支付令、仲裁的顺序推进，注意一裁终局和先予执行
+ 49 | mv0m32qj7xp6pkedkbf | ?blockType,index,id | 
+ 50 | mv164pxgur302agenho | paragraph        | 说人话： 公司拖欠工资，仲裁不是唯一路径，也不一定最快。可以按下面几种办法依次尝试、有的能并行，按手里的证据和想多快拿到钱来选。在工地上干活的，还可以按《保障农民工工资支付条例》投
+ 51 | mv164pxh8loryd6mk4k | paragraph        | 为什么 / 怎么做：
+ 52 | mv164pxh56cljn3rnsd | unorderedList    | 书面催告：用邮件、消息或 EMS 明确要求支付并给出期限，保留记录，用来证明主张过权利、也能中断仲裁时效。
+ 53 | mv164pxh1bn41w6jhzv | unorderedList    | 劳动保障监察投诉：向当地劳动保障监察机构投诉或拨 12333，监察机构可以责令支付并处罚款。
+ 54 | mv164pxiad3f1hzhjp8 | unorderedList    | 申请支付令：有欠条或工资结算单等明确债权凭证的，可向法院申请支付令；公司收到后 15 日内既不异议又不支付的，可申请强制执行；公司一旦提出书面异议，支付令失效、转入普通诉讼。
+ 55 | mv164pxiyw59aedqoyk | unorderedList    | 劳动仲裁与先予执行：追索劳动报酬的案件多数属于一裁终局，裁决对用人单位即终局、用人单位不能起诉；追索劳动报酬的案件可在仲裁期间申请先予执行，劳动者申请先予执行的可以不提供担保。
+ 56 | mv164pxjbnsy0ma9fs | unorderedList    | 刑事追责：用人单位有能力支付而拒不支付劳动报酬、数额较大，经政府有关部门责令支付仍不支付的，可能构成拒不支付劳动报酬罪，先经劳动保障监察等部门责令支付是前置条件。
+ 57 | mv1mwiitllqjuppcjxo | unorderedList    | 劳动保障监察时限：工资支付、最低工资、社保都在监察范围内，监察部门立案后 60 个工作日内调查完、复杂的可延长 30 个工作日；工程领域欠薪按《保障农民工工资支付条例》投诉，人社部
+ 58 | mv164pxjy91nnc2hzz8 | paragraph        | 来源：
+ 59 | mv164pxkqusz13qop1o | unorderedList    | 全国人民代表大会常务委员会. 中华人民共和国劳动合同法（第三十条）. 国家信访局转载. https://www.gjxfj.gov.cn/gjxfj/xxgk/fgwj/flfg/
+ 60 | mv164pxke7k9eb2xnr5 | unorderedList    | 全国人民代表大会常务委员会（2007）. 中华人民共和国劳动争议调解仲裁法（第四十四条、第四十七条）. 中国人大网. http://www.npc.gov.cn/npc/c1243
+ 61 | mv164pxkub53d1gye6m | unorderedList    | 最高人民法院、人力资源社会保障部（2025）. 依法惩治恶意欠薪犯罪典型案例. 中华人民共和国最高人民法院. https://www.court.gov.cn/zixun/xian
+ 62 | mv1mwfuojvie5yvzz6a | unorderedList    | 国务院（2004）. 劳动保障监察条例（第九条、第十条、第十一条、第十七条）. 中国政府网. https://www.gov.cn/zhengce/content/2008-03/
+ 63 | mv1mwfup7tlb0jmtq4q | unorderedList    | 国务院（2019）. 保障农民工工资支付条例（第十条、第四十二条）. 中国政府网. https://www.gov.cn/gongbao/content/2020/content_
+ 64 | mv164pxlzbwnu9enug | paragraph        | 限制与争议： 支付令的缺点是公司一提出书面异议就失效，有的公司借此拖延时间；拒不支付劳动报酬罪有前置条件，需先经政府有关部门责令支付仍不支付，所以先走劳动保障监察是必要的，立案的“
+ 65 | mv0m32qqiezuovyc60m | ?blockType,index,id,unknown | 
+ 66 | mv0m32qq83h4na3vxxa | heading          | 高性价比
+ 67 | mv0m32qqfa1zst0b9v | heading          | 5. 遇到人格侮辱、排挤或性骚扰，先按时间线固定记录，再分别走内部投诉、报警或民事诉讼
+ 68 | mv0m32qqiit1nov1ykp | ?blockType,index,id | 
+ 69 | mv164fivogfrafe0f4l | paragraph        | 说人话： 职场霸凌和性骚扰最难的是取证，对方常常不留文字，靠冷落、排挤或含混的话。处理顺序是先固定证据、保证人身安全，再按行为性质选渠道。
+ 70 | mv164fiv9r7xzwn4mic | paragraph        | 为什么 / 怎么做：
+ 71 | mv164fiwru8m8jhoo0d | unorderedList    | 常见表现：当众辱骂、贬低人格、起侮辱性外号；长期否定；孤立排挤，不给安排工作、不让参加会议；性骚扰，包括不受欢迎的肢体接触、暗示性语言、发送不雅图片。
+ 72 | mv164fiw040o1v7svwdd | unorderedList    | 固定证据：聊天记录和邮件留原始载体，口头说的话事后用消息复述请对方确认；工作场所谈话可录音、留原始文件不剪辑；按时间线记下什么时候、谁说了什么、有没有旁人在场；有身体或精神伤害的保
+ 73 | mv164fiwvz5bfqdbl0p | unorderedList    | 按性质选渠道：单位内部向人力资源部门或更高管理层书面投诉并留记录；涉及殴打、当众侮辱、威胁人身安全、限制人身自由的报警；涉及用工管理违法的向当地人力资源社会保障部门投诉；性骚扰受害
+ 74 | mv164fiw04jc7jt8ukf9 | unorderedList    | 步骤：先备份全部证据，再内部投诉，同时按需寻求妇联、公安或法律援助；环境继续恶化、人身安全受威胁的，可以先离开再维权。
+ 75 | mv164fiwxgni346e9q | paragraph        | 来源：
+ 76 | mv164fiwvgcomq1mfoh | unorderedList    | 全国人民代表大会（2020）. 中华人民共和国民法典（第一千零一十条）. 国家互联网信息办公室转载. https://www.cac.gov.cn/2020-06/01/c_159
+ 77 | mv164fixhodrvprnhfs | unorderedList    | 全国人民代表大会常务委员会（2022修订）. 中华人民共和国妇女权益保障法（第二十三条）. 中国人大网. http://www.npc.gov.cn/npc/c30834/2022
+ 78 | mv164fixljbprevxil | unorderedList    | 全国人民代表大会常务委员会（2025修订，2026年1月1日施行）. 中华人民共和国治安管理处罚法（第四十七条、第五十条）. 最高人民检察院转载. https://www.spp.
+ 79 | mv164fix1inqvtctrt9 | paragraph        | 限制与争议： 职场霸凌在我国不是独立的法律概念，要落到具体行为上对号：侮辱、威胁对应治安管理处罚法，性骚扰对应民法典人格权编；冷落、排挤、刁难这类软性行为多数对不上具体条文，能走的
+ 80 | mv0m32r20jl47azfjehc | ?blockType,index,id,unknown | 
+ 81 | mv0m32r201jfn6wcct5n | heading          | 6. 上班受伤要走工伤认定：单位 30 日内申请，单位不申请本人 1 年内直接申请
+ 82 | mv0m32r2ortsr0g06qp | ?blockType,index,id | 
+ 83 | mv16473ms5kqys4a498 | paragraph        | 说人话： 上班受伤，公司让先走医保会少拿很多待遇。工伤和医保是两套不同的保障，工伤待遇更高，而且有申请时限，越早办越好。
+ 84 | mv16473n7qlsdj1zvyi | paragraph        | 为什么 / 怎么做：
+ 85 | mv16473nf2lffxkemtl | unorderedList    | 可认定或视同工伤的情形：工作时间和场所内因工作原因受事故伤害；工作时间前后在场所内做与工作有关的预备或收尾工作受伤；在工作时间和场所内因履行职责受暴力等意外伤害；患职业病；因工外出
+ 86 | mv16473oo3378pbzhqb | unorderedList    | 认定流程：单位在事故伤害发生或被诊断为职业病之日起 30 日内向社保行政部门申请；单位不申请的，本人、近亲属或工会可在 1 年内直接申请；受理后一般 60 日内作出决定；伤情稳定后
+ 87 | mv16473ojv1mnug3r4l | unorderedList    | 主要待遇：符合目录的医疗费由工伤保险基金支付；停工留薪期内原工资福利待遇不变、由单位按月支付；一次性伤残补助金一至十级分别为 27、25、23、21、18、16、13、11、9、7
+ 88 | mv16473pyn12dq2nnak | paragraph        | 来源： 国务院（2010修订）. 工伤保险条例（国务院令第586号修订，第十四条、第十五条、第十七条、第二十条、第三十条、第三十五条至第三十七条、第六十二条）. 中国政府网. ht
+ 89 | mv16473pfaa06bg898 | paragraph        | 限制与争议： 工伤和医保是两套制度：只走医保，医疗费按医保报销，停工留薪期工资、一次性伤残补助金、伤残津贴等工伤待遇就没了，不要因单位让先走医保就放弃工伤认定。几个争议点：一是“4
+ 90 | mv0m32rhdxihfs5vshj | ?blockType,index,id,unknown | 
+ 91 | mv0m32rh3c4fot84np5 | heading          | 7. 申请劳动仲裁按五步走：定被申请人和管辖、备齐材料、提交、开庭、按裁决执行或起诉
+ 92 | mv0m32rh16h7l78hx3h | ?blockType,index,id | 
+ 93 | mv163wanqn2622vrf5n | paragraph        | 说人话： 仲裁没有想象中麻烦，材料备齐、按流程走就行，仲裁委收到申请之日起五日内决定是否受理。不少公司收到仲裁通知后会主动谈调解，因为仲裁记录会影响信用、招投标和贷款。
+ 94 | mv163waopybv46asi1 | paragraph        | 为什么 / 怎么做：
+ 95 | mv163waot916m5d2v3m | unorderedList    | 一、定被申请人和管辖：被申请人写和你签合同的公司全称，用营业执照上的名称和统一社会信用代码；劳务派遣的把派遣单位和用工单位一起列为被申请人；管辖地选劳动合同履行地或公司注册地、就近
+ 96 | mv163wapr06ytbnode | unorderedList    | 二、备材料：仲裁申请书，写明双方信息、具体请求和金额、事实与理由；证据清单和复印件、按请求逐条对应，原件自己留好、开庭时带去；身份证明以及公司的工商登记信息。
+ 97 | mv163wap4eqbmthy55g | unorderedList    | 三、提交与开庭：到仲裁委立案窗口或当地人社部门网上渠道提交，仲裁委 5 个工作日内决定是否受理；受理后一般 45 日内结案、复杂可延长 15 日，庭审一般含核对身份、陈述请求、答辩
+ 98 | mv163waq3q5088ol8ew | unorderedList    | 四、拿到裁决后：公司既不履行也不起诉的向法院申请强制执行；公司起诉的到法院应诉；对裁决不服的在收到之日起 15 日内向法院起诉；调解书和裁决书有同等法律效力、对方不履行都可申请强制
+ 99 | mv1mwauxw49wt9kbwhm | unorderedList    | 立案材料一次备齐：仲裁申请书要写明你和公司的基本信息、具体的仲裁请求和所根据的事实理由、证据和证据来源；通常交身份证原件及复印件、公司营业执照或从国家企业信用信息公示系统打印的登记
+100 | mv163waqbyckpshpn8j | paragraph        | 来源：
+101 | mv163waqnjv4bu4tdst | unorderedList    | 全国人民代表大会常务委员会（2007）. 中华人民共和国劳动争议调解仲裁法. 中国人大网. http://www.npc.gov.cn/npc/c12435/200712/t200
+102 | mv163warnhg3a3p95tp | unorderedList    | 人力资源社会保障部、最高人民法院（2025）. 关于联合发布第四批劳动人事争议典型案例的通知. 中国就业网. https://chinajob.mohrss.gov.cn/c/20
+103 | mv1mw5evn2ga6hihwc9 | unorderedList    | 全国人大常委会. 中华人民共和国劳动争议调解仲裁法（第二十八条、第二十九条）. 国家信访局转载. https://www.gjxfj.gov.cn/gjxfj/xxgk/fgwj/
+104 | mv163war3klzevuyk3d | paragraph        | 限制与争议： 仲裁全过程都可调解：调解通常更快、履行更确定，但金额可能低于裁决，证据充分、时间充裕的可以等裁决，想尽快拿钱的可以考虑调解。仲裁时效 1 年，从知道或应当知道权利被侵
+105 | mv0m333x4fkza2qrsbc | ?blockType,index,id,unknown | 
+106 | mv0m333xl4jrja1yj1c | heading          | 一般性价比
+107 | mv0m333ybqmlxs2als | heading          | 8. 公司以竞业限制、商业秘密或赔偿损失起诉你时，先核对主体、补偿和举证再应诉
+108 | mv0m333yjrucz980a8a | ?blockType,index,id | 
+109 | mv163pqdf9t7of6twe6 | paragraph        | 说人话： 多数时候是员工告公司，也有公司告员工，常见三类：违反竞业限制、侵犯商业秘密、要求赔偿损失。收到材料先别慌，逐项核对对方主张能不能成立。
+110 | mv163pqe79onubp9a6i | paragraph        | 为什么 / 怎么做：
+111 | mv163pqem4c4zas32un | unorderedList    | 违反竞业限制：适用对象限于高级管理人员、高级技术人员和其他负有保密义务的人员，不是所有员工都受约束；单位要在限制期限内按月给经济补偿，约定了却不支付补偿的，劳动者可主张不受约束；期
+112 | mv163pqeiq9am735kv8 | unorderedList    | 侵犯商业秘密：单位要证明该信息不为公众所知悉、有商业价值且单位采取了保密措施，还要证明你有使用或披露行为，只是接触到不算；客户名单若只是公开的公司名、地址、电话，一般不算商业秘密；
+113 | mv163pqezbz01ztxmw | unorderedList    | 要求赔偿损失：劳动者履行职务给单位造成的损失原则上属单位的经营风险，只有存在故意或重大过失才可能需要赔偿；单位要同时证明损失确实存在、由你造成、你有故意或重大过失、金额确定，这几点
+114 | mv163pqepw5wix1g1u | unorderedList    | 收到材料后：先看清对方告什么、主张多少钱、有哪些证据；不要失联、不要缺席，缺席对自己更不利；金额较大或涉及商业秘密的考虑请劳动法律师；自己有工资、补偿等诉求的可在同一程序里一并提出
+115 | mv163pqflaxft2eihqp | paragraph        | 来源：
+116 | mv163pqf4bzu27vwwc | unorderedList    | 全国人民代表大会常务委员会. 中华人民共和国劳动合同法（第二十三条、第二十四条、第九十条）. 国家信访局转载. https://www.gjxfj.gov.cn/gjxfj/xxg
+117 | mv163pqfc4cizw1jexf | unorderedList    | 人力资源社会保障部、最高人民法院（2025）. 关于联合发布第四批劳动人事争议典型案例的通知. 中国就业网. https://chinajob.mohrss.gov.cn/c/20
+118 | mv163pqf86497l5y5wp | paragraph        | 限制与争议： 竞业限制补偿全国通行口径是不低于离职前 12 个月平均工资的 30%、且不低于当地最低工资标准，各地可能有更高要求；劳动者违反竞业限制要按约定付违约金，违约金过高可请
+119 | mv0m334ik0mj2h0zker | ?blockType,index,id,unknown | 
+120 | mv0m334jex3eovf8iri | heading          | 9. 遇到劳动问题先打对热线：人社 12333、政务 12345、公积金 12329、法律援助 12348
+121 | mv0m334jkjp6xkot5ya | ?blockType,index,id | 
+122 | mv163gccpi23ws4phdc | paragraph        | 说人话： 维权不一定一上来就打官司，很多问题一个电话或一封投诉就能推动。先把下面几个全国统一号码记下来，遇到问题先打对电话。
+123 | mv163gcd44h30ysdnz1 | paragraph        | 为什么 / 怎么做：
+124 | mv163gce2pf95inf35d | unorderedList    | 12333 人力资源和社会保障服务热线：劳动保障监察投诉、社保咨询、工伤认定咨询、拖欠工资举报。
+125 | mv163gcfm17d5wzz95 | unorderedList    | 12345 政务服务便民热线：各类非紧急诉求都可打，会转接到相应部门处理。
+126 | mv163gcf3yzf4a7btl8 | unorderedList    | 12329 住房公积金服务热线：公积金缴存、提取、贷款和投诉。
+127 | mv163gcg9w11ru279j | unorderedList    | 12348 公共法律服务热线：免费法律咨询，符合条件的经济困难人员可以申请法律援助。
+128 | mv163gcgvbo31s9t1y | unorderedList    | 12351 工会、12338 妇女维权、12366 税务、12315 市场监管：分别对应职工维权咨询与法律援助、女职工权益和性骚扰、社保费征收相关投诉、公司违法经营投诉。
+129 | mv163gchcogxl5v1d9i | unorderedList    | 线上渠道与反映要点：全国人社政务服务平台、各地人社部门官网和政务 APP，以及当地公积金中心、政务服务的网上渠道；反映时说清你是谁、哪家公司、什么事、诉求是什么，准备基本证据，记下
+130 | mv163gchxutr310mvwm | paragraph        | 来源：
+131 | mv163gcifzlm554hpkv | unorderedList    | 国务院办公厅（2025）. 国务院办公厅关于进一步规范和提升12345热线服务的意见（国办函〔2025〕66号）. 中国政府网. https://www.gov.cn/zhengc
+132 | mv163gcmmrr0oethph | unorderedList    | 人力资源和社会保障部. 全国人社政务服务平台（12333）. https://www.12333.gov.cn/ （需在浏览器打开）
+133 | mv163gcm8wh9n2qars9 | paragraph        | 限制与争议： 各条热线在各地的归并方式和接通率不同，有的地方已把原有号码并入 12345 双号并行、有的仍然独立。热线主要负责受理、转办和协调，不代替部门执法；按规定需通过诉讼、仲
+134 | mv0m33501jiqtksak1t | ?blockType,index,id,unknown | 
+135 | mv1muxoaue2v57u4acj | heading          | 10. 仲裁请求要逐项分开写清金额和计算依据，别混成一句「赔我损失」
+136 | mv1muxoam70pjecslad | ?blockType,index,id | 
+137 | mv1muxobjr4h10e89v | paragraph        | 说人话： 仲裁请求要一项一项分开写，每一项写清要什么、多少钱、怎么算出来的。补偿金、加班费、未签合同二倍工资、欠薪各自单独列，不要写成一句笼统的赔偿要求。
+138 | mv1muxobmdo0ksw4gh | paragraph        | 为什么 / 怎么做：
+139 | mv1muxoctdh8weku1x | unorderedList    | 逐项列：违法解除赔偿金、拖欠工资、加班费、未签书面劳动合同的二倍工资差额、未休年休假工资、经济补偿等，分别写清请求金额和计算依据，各自附对应证据。
+140 | mv1muxoc8ia1dxf4hg8 | unorderedList    | 未签劳动合同二倍工资：用工之日起超过一个月不满一年未订立书面劳动合同的，公司应当每月支付二倍工资（劳动合同法第八十二条），主张的是那段未签期间的差额；各地对起算时间和支付上限的执行
+141 | mv1muxodux5pz9a286g | unorderedList    | 加班费：按劳动法第四十四条，工作日延长工作时间不低于 1.5 倍、休息日不能补休不低于 2 倍、法定节假日不低于 3 倍；人社部答复口径与《工资支付暂行规定》第十三条一致，加班费计
+142 | mv1muxodv4jp6jcsxo | unorderedList    | 欠薪和补偿分开走：完全欠发工资的可以同时向劳动保障监察投诉，请其责令支付（劳动争议调解仲裁法第九条）；经济补偿按劳动合同法第四十六条、第四十七条计算，构成违法解除的按第八十七条二倍
+143 | mv1muxoerdw5v0kmxib | paragraph        | 来源：
+144 | mv1muxoe6vprqa3spvf | unorderedList    | 全国人大常委会. 中华人民共和国劳动合同法，第八十二条. https://www.gjxfj.gov.cn/gjxfj/xxgk/fgwj/flfg/webinfo/2016/03
+145 | mv1muxof2269tj0fssrj | unorderedList    | 人力资源和社会保障部（2024）. 加班工资如何计算？. https://www.mohrss.gov.cn/SYrlzyhshbzb/ztzl/rslyyhyshj/zcwd/2
+146 | mv1muxofl1epuyvz7ff | unorderedList    | 全国人大常委会. 中华人民共和国劳动争议调解仲裁法，第九条. https://www.gjxfj.gov.cn/gjxfj/xxgk/fgwj/flfg/webinfo/2016/
+147 | mv1muxogk6i865qje2 | paragraph        | 限制与争议： 各地对二倍工资的起算、封顶和时效掌握不同；加班费的举证责任分配和计算基数（按基本工资还是全额工资）争议较大，个案差异明显。请求项目和金额一旦确定，开庭前增加或变更可能
+148 | mv1muxogbzq1xaj9sfm | ?blockType,index,id,unknown | 
+149 | mv1muxoh7kk5e7zc5i2 | heading          | 11. 裁决生效后对方不付钱，在两年内向法院申请强制执行，可限制高消费并列入失信名单
+150 | mv1muxohfs2a60yfzgl | ?blockType,index,id | 
+151 | mv1muxoifgv20h8rmtb | paragraph        | 说人话： 裁决书、调解书生效后公司还不付钱，你可以向法院申请强制执行，执行申请要在两年内提出。公司有能力而不履行的，可以被限制高消费、列入失信被执行人名单。
+152 | mv1muxoij0sji2eyv8 | paragraph        | 为什么 / 怎么做：
+153 | mv1muxoj6ig1g6oyl4m | unorderedList    | 先看裁决是哪一种：一裁终局的（追索劳动报酬、工伤医疗费、经济补偿或者赔偿金，不超过当地月最低工资标准十二个月金额的争议，以及因执行国家劳动标准在工作时间、休息休假、社会保险等方面发
+154 | mv1muxojafi6nwj7hpe | unorderedList    | 申请执行：一方逾期不履行生效调解书、裁决书的，另一方可以依照民事诉讼法的规定向人民法院申请执行（第五十一条）。申请执行的期间为二年，从法律文书规定的履行期间的最后一日起计算（民事诉
+155 | mv1muxokw48yf6ipovr | unorderedList    | 能采取的措施：法院可以查询、冻结、划扣公司银行账户，查封、扣押、拍卖财产；被执行人有履行能力而拒不履行等情形的，法院可以将其纳入失信被执行人名单，在政府采购、招标投标、融资信贷、市
+156 | mv1muxoka71932ry1x5 | paragraph        | 来源：
+157 | mv1muxol88cbaeo54da | unorderedList    | 全国人大常委会. 中华人民共和国劳动争议调解仲裁法，第四十七条、第四十八条、第五十条、第五十一条. https://www.gjxfj.gov.cn/gjxfj/xxgk/fgwj
+158 | mv1muxolgez0uht2p9d | unorderedList    | 中华人民共和国民事诉讼法（2023 年修正），第二百五十条. https://guangdong.chinatax.gov.cn/gdsw/zjfg/2025-12/31/cont
+159 | mv1muxomjxf687lepml | unorderedList    | 最高人民法院. 关于公布失信被执行人名单信息的若干规定. http://gongbao.court.gov.cn/Details/1c0baa9e69e6a21c809886144
+160 | mv1muxom6uyrjyik3f4 | paragraph        | 限制与争议： 强制执行能不能拿到钱，最终看公司有没有可执行财产；公司已经注销、转移财产或者本身没有资产，即使胜诉也可能执行不到。起诉或者申请执行前，可以先通过国家企业信用信息公示系
+161 | mv1muxon0lojmyd8a09 | ?blockType,index,id,unknown | 
+162 | mv0vwyn5siq0x7gy3eo | ?blockType,index,id | 

@@ -3,3 +3,6 @@
 node_modules/
 .venv/
 __pycache__/
+
+# 离线包产物（只挂 Release，不进仓库）
+dist/

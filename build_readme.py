@@ -106,6 +106,19 @@ readme = f"""<div align="center">
 
 ### [打开站内检索页](https://nicecao.github.io/HowToWorkBetter/)
 
+<table>
+<tr><td align="right"><b>下载</b></td><td align="left">
+
+[PDF](https://github.com/NiceCao/HowToWorkBetter/releases/download/epub-latest/HowToWorkBetter.pdf) · [EPUB](https://github.com/NiceCao/HowToWorkBetter/releases/download/epub-latest/HowToWorkBetter.epub) · [离线单文件（HTML）](https://github.com/NiceCao/HowToWorkBetter/releases/download/epub-latest/HowToWorkBetter.html)
+
+</td></tr>
+<tr><td align="right"><b>手机上读</b></td><td align="left">
+
+[上班宝 · 工作指南](https://shangbanbao.com/work.html)（在线检索页的移动版）
+
+</td></tr>
+</table>
+
 </div>
 
 ---

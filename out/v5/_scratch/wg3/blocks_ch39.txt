@@ -1,0 +1,141 @@
+  0 | mv0repmkl8idpzn1hla | heading          | 第39章 职场健康：别把身体搞垮
+  1 | mv0wege9rrdpuf8n57h | ?blockType,index,id | 
+  2 | mv0repmlsxus9uttea | ?blockType,index,id,unknown | 
+  3 | mv0repmle18ud0z7eor | heading          | 极高性价比
+  4 | mv0repml07j8jt7f44wv | paragraph        | 条目 1：每坐满一小时起身活动几分钟，把一天的久坐时间切碎——世界卫生组织建议成年人每周做150到300分钟中等强度身体活动，并减少久坐时间
+  5 | mv0repmlkhhasawar3k | ?blockType,index,id | 
+  6 | mv0repml0vycmjbgac1p | paragraph        | 条目 2：按20-20-20法则安排用眼，把屏幕距离保持在50到70厘米——每看屏幕20分钟抬头看约6米外20秒，屏幕与眼睛保持50到70厘米
+  7 | mv0repmlw5v7krxv7uh | ?blockType,index,id | 
+  8 | mv0repml1h0egwkbdg7 | paragraph        | 条目 3：固定入睡和起床时间，把加班控制在法定上限内——全国爱卫办建议成年人每天睡7到8小时，法定加班每月不超过36小时
+  9 | mv0repmldc7kvhya2pr | ?blockType,index,id | 
+ 10 | mv0repml5k04ua1t2t | paragraph        | 条目 4：情绪困扰持续两周就先减负并寻求专业帮助——情绪低落、失去兴趣、睡眠和食欲明显变化持续两周以上且影响生活就应求助，可拨打全国统一心理援助热线12356
+ 11 | mv0repmley2oc04m3us | ?blockType,index,id | 
+ 12 | mv1myaepn8leywt5l58 | paragraph        | 条目 5：出差在外先把安全防线设好——夜间到达先订好接站或正规酒店，打车用平台并把行程分享给同事，证件和贵重物品分开放，到达和离开都跟同事报一声
+ 13 | mv1myaeqfftbuuuja4 | ?blockType,index,id | 
+ 14 | mv0repmlok9eizgsggr | ?blockType,index,id,unknown | 
+ 15 | mv0repmlkrbffysq3jg | heading          | 1. 每坐满一小时起身活动几分钟，把一天的久坐时间切碎
+ 16 | mv0repml135u38rg3mo | ?blockType,index,id | 
+ 17 | mv15wtrcgk0b6jjd0ep | paragraph        | 说人话： 长时间伏案的人，颈肩和腰的不适多半来自连续几个小时不动，不花钱的办法就是把久坐拆成一段一段、每隔一会儿换个姿势。出现手麻、腿疼、走路发飘这类表现的，先去正规医院检查，别当
+ 18 | mv15wtrdwwmxp6dpfx | paragraph        | 为什么 / 怎么做：
+ 19 | mv15wtrd1icb5du0je6 | unorderedList    | 每坐45到60分钟起身活动2到3分钟，接水、走动、拉伸都行，用手机闹钟或浏览器插件提醒自己。
+ 20 | mv15wtrdj2sjdux3c9f | unorderedList    | 调坐姿：臀部坐满椅子、腰背贴住椅背、膝盖自然弯成直角、双脚平放，屏幕上沿与视线大致齐平；看手机时把它举到视线高度。
+ 21 | mv15wtrd9a0st5kznbe | unorderedList    | 选椅子先看腰托能不能顶住腰，不必追求价格，不方便换椅子时加一个腰靠也可以。
+ 22 | mv15wtrd7my0hcz0p1 | unorderedList    | 世界卫生组织建议成年人每周做150到300分钟中等强度身体活动，每周另做两次针对主要肌群的力量练习，同时减少久坐时间。
+ 23 | mv1mya241kxn8r7gh93 | unorderedList    | 重复动作：出现手腕、腰背麻木疼痛早看医生，调整姿势和工位高度，别硬扛；长期夜班记录自己的睡眠，能申请调班或调岗就别硬熬。
+ 24 | mv15wtrdrqyscuxwbki | paragraph        | 来源：
+ 25 | mv15wtrdipd2rlbrs9 | unorderedList    | 世界卫生组织（2020）. WHO Guidelines on physical activity and sedentary behaviour. https://www.who
+ 26 | mv15x99779fy79bvt0p | unorderedList    | 中国康复研究中心（2024）. 颈椎病并非只是颈背疼（健康科普）. https://crrc.com.cn/Html/News/Articles/11019.html
+ 27 | mv1my9pgs6q0duhw57q | unorderedList    | 国际癌症研究机构（2020）. Night Shift Work. IARC Monographs Vol. 124. https://iarc.who.int/news-even
+ 28 | mv15wtrde3ltrfymb6h | paragraph        | 限制与争议： 这些动作针对日常伏案带来的肌肉紧张，属于习惯调整，不构成治疗；已经确诊颈椎或腰椎问题的人，活动方式听医生的，别照通用清单自己练。人体工学桌椅的效果因人而异，买之前最好
+ 29 | mv0repmpu9tx8i2sy4r | ?blockType,index,id,unknown | 
+ 30 | mv0repmp0rjir17elk1k | heading          | 2. 按20-20-20法则安排用眼，把屏幕距离保持在50到70厘米
+ 31 | mv0repmp192o21yok6k | ?blockType,index,id | 
+ 32 | mv15wmrjmyyfmamlld | paragraph        | 说人话： 眼睛干、涩、看久了发胀，多数和连续盯屏、眨眼变少有关，护眼成本很低，靠几个能固定的习惯就能减少不适；出现眼睛红肿、疼痛、视力突然下降、看灯有异常光晕或眼前黑影时，属于要就
+ 33 | mv15wmrkfbld365f6un | paragraph        | 为什么 / 怎么做：
+ 34 | mv15wmrkt83qafzz2 | unorderedList    | 20-20-20法则：每看屏幕20分钟，抬头看大约6米外的地方20秒；屏幕与眼睛保持50到70厘米，屏幕上沿略低于视线。
+ 35 | mv15wmrlqls61hip45 | unorderedList    | 有意识地多眨眼，不在关灯后长时间看手机；屏幕亮度调到与周围环境接近，隐形眼镜不要长时间连续佩戴。
+ 36 | mv15wmrla6mhcn49b8w | unorderedList    | 眼睛干时用不含防腐剂的人工泪液；每年做一次视力检查，度数变了及时换镜片。
+ 37 | mv15wmrlvxon56i5mh | paragraph        | 来源：
+ 38 | mv15wmrlj8dqauoyhs | unorderedList    | 新华网（2025）. 干眼症呈现低龄化趋势 专家呼吁科学使用电子屏. http://www.news.cn/tech/20250523/35f8918b7539408bb775d2
+ 39 | mv15wmrlkcq2u9919y | paragraph        | 限制与争议： 报道引用的《中国干眼专家共识（2024年）》给出的我国干眼患病率区间是21%到52.4%，区间很宽，不同人群和诊断标准下差别较大，不能当成每个人的概率。防蓝光眼镜对眼
+ 40 | mv0repmucni6xmthrol | ?blockType,index,id,unknown | 
+ 41 | mv0repmu706p9tht6bf | heading          | 3. 固定入睡和起床时间，把加班控制在法定上限内
+ 42 | mv0repmubo49jmeth7w | ?blockType,index,id | 
+ 43 | mv15wbdt3xa7jq749ny | paragraph        | 说人话： 睡眠时间不够、作息乱，和白天效率下降、情绪不稳、心血管风险升高相关。作息这件事省钱，把入睡和起床时间固定下来，再把加班挡在法定上限之外。
+ 44 | mv15wbdtqchj8mryfha | paragraph        | 为什么 / 怎么做：
+ 45 | mv15wbdtst3m8s58qrr | unorderedList    | 睡眠按全国爱卫办的建议：成年人每天睡7到8小时，老年人6到7小时，推荐晚上10点到11点入睡、早上6点到7点起床；睡前不刷手机、不靠喝酒助眠。
+ 46 | mv15wbdt9amj69l3hzg | unorderedList    | 加班按法定上限：每日工作不超过8小时、每周不超过40小时，加班一般每日不超过1小时，特殊原因每日不超过3小时、每月不超过36小时。
+ 47 | mv15wbduq9cm343nsc | unorderedList    | 长时间工作与健康相关：世界卫生组织和国际劳工组织估算，每周工作55小时及以上的人，中风风险约高35%，死于缺血性心脏病的风险约高17%。
+ 48 | mv15wbduek60iigjn38 | paragraph        | 来源：
+ 49 | mv15wbduq4t4hhxv1k | unorderedList    | 全国爱国卫生运动委员会办公室（2025）. 睡眠健康核心信息及释义. https://www.gov.cn/lianbo/bumen/202503/content_7014409.
+ 50 | mv15wbdupqnrt37u6d | unorderedList    | 全国人大常委会. 中华人民共和国劳动法；国务院（1995修订）. 国务院关于职工工作时间的规定. https://www.gjxfj.gov.cn/gjxfj/fgwj/flfg/
+ 51 | mv15wbduh59frgipdp7 | unorderedList    | 世界卫生组织、国际劳工组织（2021）. Long working hours increasing deaths from heart disease and stroke. h
+ 52 | mv15wbduzyq7dnbulxh | paragraph        | 限制与争议： 35%、17% 是世卫组织和国际劳工组织基于多国数据的全球估算，说的是群体关联，不能据此推算个人风险。加班上限是法定标准，现实中取证和维权有难度；长期失眠、打鼾伴呼吸
+ 53 | mv0repn2mk5i0c1lz1 | ?blockType,index,id,unknown | 
+ 54 | mv0repn3xm02ackhe4 | heading          | 4. 情绪困扰持续两周就先减负并寻求专业帮助
+ 55 | mv0repn3lr4kvwrgxp | ?blockType,index,id | 
+ 56 | mv15w1r38xf2dqfm3xf | paragraph        | 说人话： 持续的情绪低落、提不起劲、睡不好，是常见的健康问题，和意志强弱无关；早一点处理，代价比拖到影响工作和生活小得多。这一条只讲怎么识别、怎么减负、什么时候找专业的人，不替代诊
+ 57 | mv15w1r38q48q35e7us | paragraph        | 为什么 / 怎么做：
+ 58 | mv15w1r47qt8sgd2rwn | unorderedList    | 不花钱的先做：规律运动，每周数次、每次半小时中等强度活动；减少睡前刷屏；把话说给信得过的人；留一件和工作无关的爱好；拒绝超出职责和精力的要求。
+ 59 | mv15w1r4te3l0ttjsfb | unorderedList    | 该找专业帮助：情绪低落、失去兴趣、睡眠和食欲明显变化持续两周以上且影响工作或生活；出现伤害自己的念头或行为时立即就医，或拨打免费的心理援助热线12356。
+ 60 | mv15w1r4anedrf22i1b | paragraph        | 来源：
+ 61 | mv15w1r552wb3fikm85 | unorderedList    | 世界卫生组织（2022）. 精神卫生：加强我们的应对行动. https://www.who.int/zh/news-room/fact-sheets/detail/mental-h
+ 62 | mv15w1r6nfnscypx6hc | unorderedList    | 中国政府网（2024）.“12356”将成为全国统一心理援助热线. https://www.gov.cn/lianbo/bumen/202412/content_6994462.h
+ 63 | mv15w1r6v0ssxjsvmp | paragraph        | 限制与争议： 这里列的是自我照护和求助时机，是否达到需要治疗的程度由专业机构判断，别用网上的自测题给自己下结论，出现紧急的自我伤害风险要直接去急诊；运动、减负对轻度情绪困扰有帮助，
+ 64 | mv1my9d825ke6o4iio6j | ?blockType,index,id,unknown | 
+ 65 | mv1my9d9ky08b7hkhhi | heading          | 5. 出差在外先把安全防线设好：夜到、打车、证件财物、报备
+ 66 | mv1my9d99qqto21qx6l | ?blockType,index,id | 
+ 67 | mv1my9dajreryme3hpe | paragraph        | 说人话： 在陌生城市，安全靠自己提前设几道防线：夜里到达先订好接站或正规酒店，打车用平台并把行程分享给同事，证件和贵重物品分开放，到了给同事发一条定位和酒店名。
+ 68 | mv1my9da4fu6lvrjk59 | paragraph        | 为什么 / 怎么做：
+ 69 | mv1my9daqsuz76lihm | unorderedList    | 夜间到达：能改白天车次就改，只能夜到就提前订好离车站或机场近的正规酒店，让酒店接站或走平台打车，不坐无牌黑车。
+ 70 | mv1my9dam0dh30xklgp | unorderedList    | 打车：用正规出租或网约车平台下单，上车前把车牌和行程分享给同事或家人，落座后排。
+ 71 | mv1my9dbtq31k7o2vqf | unorderedList    | 证件财物：身份证、银行卡、备用现金分开放，贵重物品放酒店保险箱。
+ 72 | mv1my9dba9zf0rfayri | unorderedList    | 报备：到达、见完客户、离开各给同事发一条消息，把酒店名和房间号告诉一位同事；遇到异常先离开现场再处理。
+ 73 | mv1my9db9453tp8qmou | paragraph        | 来源： 无
+ 74 | mv1my9dfgu0d4css8r | paragraph        | 限制与争议： 这条属通识经验，不同城市、不同性别和身体状况的风险不一样；网约车平台的安全功能逐年变化，具体以当地治安提示和你公司的差旅安全制度为准。
+ 75 | mv0repndtrhgubxstf | ?blockType,index,id,unknown | 
+ 76 | mv0reqebjjv1wj4trwk | heading          | 高性价比
+ 77 | mv0reqecn5fxmehfuti | paragraph        | 条目 6：按年龄和风险选项目，固定每年做一次体检——2025年国家卫生健康委印发《成人健康体检项目推荐指引（2025年版）》，把基本项目和慢性病风险筛查项目分开
+ 78 | mv0reqed6kko0a8268k | ?blockType,index,id | 
+ 79 | mv0reqeew86achuayjm | paragraph        | 条目 7：把每天盐油糖的量压到目标内，并按最低标准补上活动量——《健康中国行动（2019—2030年）》目标为人均每日食盐不超过5克、食用油25到30克、添加糖不超过25克
+ 80 | mv0reqeebiqijwijigv | ?blockType,index,id | 
+ 81 | mv0reqefaeqy6gvom4e | paragraph        | 条目 8：先分清普通疾病和法定职业病，符合条件再走诊断与工伤认定——2024年调整后的《职业病分类和目录》自2025年8月1日起实施，共12类135种
+ 82 | mv0reqegl438yfc47k | ?blockType,index,id | 
+ 83 | mv0reqeihc2cy0v4uo6 | ?blockType,index,id,unknown | 
+ 84 | mv0reqejvgzack7sww | heading          | 6. 按年龄和风险选项目，固定每年做一次体检
+ 85 | mv0reqelh7sgjf9x7ge | ?blockType,index,id | 
+ 86 | mv15vnl7t8wybvnrbc | paragraph        | 说人话： 体检的价值在于把还没出现症状的问题找出来，方便早处理；项目不是越多越好，花在适合自己的项目上更划算。2025年国家卫生健康委印发《成人健康体检项目推荐指引（2025年版）
+ 87 | mv15vnl8y8httyyumtm | paragraph        | 为什么 / 怎么做：
+ 88 | mv15vnl8zr3yyhaihtq | unorderedList    | 每年做一次基础体检：体格检查、血常规、尿常规、肝肾功能、血脂血糖、心电图等。
+ 89 | mv15vnl9qc3wf36j5nh | unorderedList    | 按年龄、家族史和生活习惯加做：有肺部风险的人做胸部低剂量CT，40岁以后按医生建议安排胃肠镜等；把往年报告放在一起比趋势，比只看单次数值更有用，异常项去医院复查。
+ 90 | mv15vnle07u53ycwbur3 | unorderedList    | 公司统一套餐偏基础的可以自费加做几项，结果对个人保密；岗位接触粉尘、噪声、化学物质等职业病危害因素的，单位应当安排职业健康检查，费用由单位承担。
+ 91 | mv15vnleymaxtfwsse | paragraph        | 来源：
+ 92 | mv15vnlfffawtm73z0i | unorderedList    | 国家卫生健康委员会（2025）. 成人健康体检项目推荐指引（2025年版）（《健康报》报道，福建省卫生健康委员会转载）. https://wjw.fujian.gov.cn/xxg
+ 93 | mv15vnlgt6loylwh1tr | paragraph        | 限制与争议： 体检存在查不出来的情况，也存在把正常人查出异常的假阳性，后者会带来额外检查和焦虑，加做哪些项目要结合年龄、家族史和风险、听医生的建议，不必追求又贵又全的套餐；健康体检
+ 94 | mv0reqgfi8592pn0qxs | ?blockType,index,id,unknown | 
+ 95 | mv0reqggih0rdv4egqj | heading          | 7. 把每天盐油糖的量压到目标内，并按最低标准补上活动量
+ 96 | mv0reqghi3tcoffkr5 | ?blockType,index,id | 
+ 97 | mv15vf961kh01y7i2yy | paragraph        | 说人话： 吃得过油过咸、活动太少、体重上升，是工作节奏带出来的常见结果。这一类问题不用靠保健品，把每天盐、油、糖的量压到目标范围内，再把活动量补上，比吃什么都管用。
+ 98 | mv15vf9731p3wwk70fr | paragraph        | 为什么 / 怎么做：
+ 99 | mv15vf9768y8uv88nwl | unorderedList    | 盐油糖先对着目标看现状：《健康中国行动（2019—2030年）》的目标是人均每日食盐不超过5克、食用油25到30克、添加糖不超过25克；世界卫生组织引用的数据是我国成年人平均每天摄
+100 | mv15vf97oouye0ct6f8 | unorderedList    | 怎么做：点外卖时备注少油少盐，主食按需减量，别把香肠、培根这类加工肉类当日常主菜，少喝含糖饮料。
+101 | mv15vf97wwc528n87er | unorderedList    | 活动量按最低标准起步：每周150到300分钟中等强度有氧活动加每周2次针对主要肌群的力量练习，用提前一站下车、午休走15分钟、走楼梯凑时间；不搞周末突击运动，平时不动、周末猛练更容
+102 | mv15vf979cin3mq5azp | paragraph        | 来源：
+103 | mv15vf97dw5j1nj3xut | unorderedList    | 世界卫生组织（2025）. 健康饮食（中国）. https://www.who.int/china/zh/health-topics/healthy-diet
+104 | mv15vf98xl75a49euvm | unorderedList    | 世界卫生组织（2020）. WHO Guidelines on physical activity and sedentary behaviour. https://www.who
+105 | mv15vf98arrajpk6kmt | unorderedList    | 中国营养学会（2022）. 中国居民膳食指南（2022）. http://dg.cnsoc.org/article/04/glVJd6DRRCqm-hYzWlEVNQ.html
+106 | mv15vf98vt7s8u3wme9 | paragraph        | 限制与争议： 指南给的是人群推荐量，个体还要结合体重、活动量和疾病情况调整，有慢性病的按医嘱执行；营养领域方法多样，控制总量、结构均衡比追求某种最优饮食更重要，运动形式也一样，能长
+107 | mv0reqigw44bamjumkg | ?blockType,index,id,unknown | 
+108 | mv0reqiip196erf42he | heading          | 8. 先分清普通疾病和法定职业病，符合条件再走诊断与工伤认定
+109 | mv0reqilrlnmkig7jll | ?blockType,index,id | 
+110 | mv15v65vx4gxmwxd5tk | paragraph        | 说人话： 工作相关的毛病不一定都能算职业病，能不能算要看它是否在《职业病分类和目录》里、有没有明确的职业接触。2024年调整后的目录自2025年8月1日起实施，共12类135种，新
+111 | mv15v65vticj9f9ryb | paragraph        | 为什么 / 怎么做：
+112 | mv15v65vdc165lstzf4 | unorderedList    | 新增的职业性肌肉骨骼疾病只列了两项：腕管综合征，限长时间腕部重复作业或用力作业的制造业工人；滑囊炎，限井下工人。长期伏案引起的颈肩腰不适不在目录内，不能按职业病处理。
+113 | mv15v65w7f8arjmh3b9 | unorderedList    | 新增的职业性精神和行为障碍只列了创伤后应激障碍，限参与突发事件处置的人民警察、医疗卫生人员、消防救援等应急救援人员。
+114 | mv15v65wakrbe3udrsi | unorderedList    | 符合条件时走流程：到职业病诊断机构做诊断，需要职业史、职业病危害接触史和临床表现等材料，单位不配合提供资料的可以向卫生健康主管部门投诉；被诊断为职业病后向人社部门申请工伤认定，再做
+115 | mv15v65wbuv0sfvf32k | paragraph        | 来源：
+116 | mv15v65wichye4qkjth | unorderedList    | 国家卫生健康委、人力资源社会保障部、国家疾控局、全国总工会（2024）. 职业病分类和目录. https://www.gov.cn/gongbao/2025/issue_11886
+117 | mv15v65wane8xyxbthr | paragraph        | 限制与争议： 新增目录里被叫作鼠标手的腕管综合征，仅限制造业中长时间腕部重复作业或用力作业的工人，办公室岗位一般不在其中，这是这次调整里容易误读的部分；诊断需要证明职业接触与疾病之
+118 | mv0reql9702s7xsqa6c | ?blockType,index,id,unknown | 
+119 | mv0reqlbnqbwpdqzq0g | heading          | 一般性价比
+120 | mv0reqldncq75xqun4i | paragraph        | 条目 9：发生工伤后在时效内申请认定，别错过一年期限——单位应在事故发生后30日内向人社部门申请，单位不申请的本人或近亲属可在1年内自行申请
+121 | mv0reqlf5ak66j2smbb | ?blockType,index,id | 
+122 | mv0reqlhsbb60h3l2st | ?blockType,index,id,unknown | 
+123 | mv0reqlis9i6568h0a | heading          | 9. 发生工伤后在时效内申请认定，别错过一年期限
+124 | mv0reqlk5767mhiefo4 | ?blockType,index,id | 
+125 | mv15uybuotfjtjxtqe | paragraph        | 说人话： 工作中受伤、上下班途中发生非本人主要责任的交通事故、被认定为职业病，都可以走工伤保险。工伤是事后补救，赔偿到位也不能让身体回到原样，注意在时效内申请认定。
+126 | mv15uybvbundhbp0gws | paragraph        | 为什么 / 怎么做：
+127 | mv15uybws31oi4fc1o | unorderedList    | 哪些算工伤：在工作时间和工作场所内因工作原因受到事故伤害、工作时间前后从事预备性或收尾性工作受伤、患职业病、上下班途中受到非本人主要责任的交通事故等应当认定；在工作时间和工作岗位突
+128 | mv15uybwunwoo63bew | unorderedList    | 流程和时效：受伤后先就医，保留病历、诊断证明和发票；单位应在事故发生后30日内向人社部门申请工伤认定，单位不申请的，本人或近亲属可在1年内自行申请；认定为工伤、伤情稳定后申请劳动能
+129 | mv15uybxu86vsr8zrg | unorderedList    | 赔偿口径：一次性工亡补助金为上一年度全国城镇居民人均可支配收入的20倍，国家统计局公布2024年城镇居民人均可支配收入为54188元，按此计算约108.4万元；其余项目按伤残等级和
+130 | mv15uybxmyq8e1ixrer | paragraph        | 来源：
+131 | mv15uybzif56bupu0fp | unorderedList    | 国务院（2010修订）. 工伤保险条例. http://xzfg.moj.gov.cn/law/detail?LawID=610
+132 | mv15uyc0bqey597k0pn | unorderedList    | 国家统计局（2025）. 2024年居民收入和消费支出情况. https://www.stats.gov.cn/sj/zxfb/202501/t20250117_1958325.h
+133 | mv15uyc0rwf3lutje4 | paragraph        | 限制与争议： 一次性工亡补助金按上一年度数据计算、每年更新，这里的108.4万元是用2024年数据算出的示例，实际以发生工亡当年适用的口径为准；上下班途中的交通事故必须是本人不承担
+134 | mv0rerhqh5krzh7jtor | ?blockType,index,id,unknown | 
+135 | mv0vooj6p0003k3937e | ?blockType,index,id | 
+136 | mv0vooj7d968m6pix65 | unorderedList    | 久坐：每坐45到60分钟起身活动2到3分钟，每周另做150到300分钟中等强度活动、2次力量练习。
+137 | mv0vooj7afn80qm4ncv | unorderedList    | 用眼：按20-20-20法则，屏幕与眼睛保持50到70厘米。
+138 | mv0vooj8p578adaf71f | unorderedList    | 作息：成年人每天睡7到8小时，加班每月不超过36小时。
+139 | mv0vooj90gipqsitg0uv | unorderedList    | 饮食：每天食盐不超过5克、食用油25到30克、添加糖不超过25克。
+140 | mv0vooj9o3djotnfhph | unorderedList    | 就医与维权：情绪或睡眠异常持续两周以上就减负并寻求专业帮助；每年做一次体检；工伤由本人申请认定的期限为1年。

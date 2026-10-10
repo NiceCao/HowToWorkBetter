@@ -40,7 +40,7 @@ for f in sorted(glob.glob('book/*.md')):
         m = re.search(r'\*\*来源[:：]\*\*(.*?)(?=\n\*\*|\Z)', b, re.S)
         if m:
             s = m.group(1)
-            if 'http' not in s and not re.fullmatch(r'\s*[-–—•*]?\s*无\s*[。.]?\s*', s):
+            if 'http' not in s and not re.fullmatch(r'\s*[-–—•*]?\s*无\s*[。.]?\s*(?:（[^）]{0,40}）)?\s*', s):
                 tot['⑨来源块无链接也无「无」'] += 1; bych['⑨来源块无链接也无「无」'][n] += 1
                 if len(ex[('⑨来源块无链接也无「无」', n)]) < 2:
                     ex[('⑨来源块无链接也无「无」', n)].append(s.strip().replace('\n', ' ')[:110])

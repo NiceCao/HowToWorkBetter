@@ -7,3 +7,8 @@
 - **站点**由 `build_index.py`（生成 `index.html`）和 `build_site.py`（生成 `ch/*.html`）产出：**别手改 `index.html` 和 `ch/*.html`**，改正文后按这个顺序重跑：
   `python3 tools/build_entries.py`（重建 `data/entries.json`，检索页的条数统计靠它，漏跑就会显示过期条数）→ `python3 build_items.py` → `python3 build_index.py` → `python3 build_site.py` → `python3 build_readme.py` → `python3 tools/build_refs.py`。
 - 图（`og.png`）由 `og.html` 渲染：`google-chrome --headless --no-sandbox --hide-scrollbars --force-device-scale-factor=2 --window-size=1200,630 --screenshot=og.png og.html`。标题用思源宋体、正文用思源黑体（`fonts-noto-cjk`/`fonts-noto-cjk-extra`），图上**不写条数/章数**，避免内容一变就要重做图。
+
+## 离线包（PDF / EPUB / 单页 HTML）与下载链接
+- 构建：`python3 tools/build_dist.py`（内部依次跑 `tools/build_offline.py` → `tools/build_pdf.py` → `tools/build_epub.py`），产物在 `dist/`。**`dist/` 不进 git**（PDF 有 7MB+），只上传到 Release。
+- 发布：`python3 tools/publish_release.py`（令牌 `~/.secrets/github_token`，同名资源先删后传）。固定标签 `epub-latest`，所以站点/README 里的下载链接（`https://github.com/NiceCao/HowToWorkBetter/releases/download/epub-latest/HowToWorkBetter.pdf`、`.epub`、`.html`）**永远不变**，内容更新只需重跑构建 + 发布。
+- 图上、封面页上不写章数条数，内容一变不用重做图/封面。

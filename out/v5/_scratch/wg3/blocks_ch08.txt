@@ -1,0 +1,114 @@
+  0 | mv0nbn1ve8voa6cgu6f | heading          | 第8章 择业反面清单：这些工作千万别碰
+  1 | mv0tlkeyzngyne0mn | paragraph        | 有些岗位在招聘和合同环节就埋着问题，进去以后才发现收入、保障可能落空。本章把择业里常见的几类陷阱拆开讲：无底薪纯提成、试用期不签合同不发工资、入职先收钱、境外高薪招聘、劳务派遣和外
+  2 | mv0nbn1w9wqz09zrulh | ?blockType,index,id,unknown | 
+  3 | mv0nbn1w5vca3mt651b | heading          | 极高性价比
+  4 | mv0nbn1w5yoyh735yc4 | heading          | 1. 遇到「无底薪、纯提成、上不封顶」，先确认有没有最低工资兜底
+  5 | mv0nbn1wlmgpf8ptanm | ?blockType,index,id | 
+  6 | mv14bc3mexhctb737hc | paragraph        | 说人话： 有的岗位不写底薪，收入全靠提成或计件，招聘时说得天花乱坠，进去以后没单就没钱。记一条底线：只要你在法定工作时间内提供了正常劳动，工资就不能低于当地最低工资标准；低于这条线
+  7 | mv14bc3mbt9ar3af47 | paragraph        | 为什么 / 怎么做：
+  8 | mv14bc3mva91ncqkz4j | unorderedList    | 招聘写「底薪面议」「无底薪、上不封顶」，或签「合作协议」顶替劳动合同，都是在把保底和劳动关系包装掉。
+  9 | mv14bc3mjke3mozqdtk | unorderedList    | 面试先问四件事：有没有底薪、底薪多少、提成怎么算、能不能写进合同。
+ 10 | mv14bc3mcutl4pp5k5h | unorderedList    | 只肯口头承诺、不肯写进合同的，按没有底薪准备。
+ 11 | mv14bc3muf16uhyb9l | paragraph        | 来源：
+ 12 | mv14bc3mof1qd69knra | unorderedList    | 人力资源和社会保障部（2004）. 最低工资规定（劳动保障部令第 21 号）. https://www.mohrss.gov.cn/xxgk2020/gzk/gz/202112/t
+ 13 | mv14bc3n2qxywpmx6fh | unorderedList    | 全国人民代表大会常务委员会（2007 年通过，2012 年修正）. 中华人民共和国劳动合同法. https://sfj.beijing.gov.cn/sfj/sfdt/fzxc74
+ 14 | mv14bc3nf2hhqekbwxp | paragraph        | 限制与争议： 提成制、计件工资本身合法，收入上不封顶也是常见做法，本条说的是「无底薪」不等于可以不保底，有没有最低工资兜底才是合规分界线；各地标准每两年至少调整一次，以当地人力资源
+ 15 | mv0nbn26rozhmh01fm | ?blockType,index,id,unknown | 
+ 16 | mv0nbn26iu6jus27vj | heading          | 2. 只给「试岗期」「见习期」不签合同不发工资的，先要求签书面劳动合同再上岗
+ 17 | mv0nbn26cwtro6eqwxs | ?blockType,index,id | 
+ 18 | mv14b5rbxhvt7szkbe | paragraph        | 说人话： 有的岗位让你先「试岗」三五天甚至一两周，干完再决定要不要，试岗期间不给钱、不签合同。只要你去上班、接受管理、干活，劳动关系从用工那天就成立，试用期也要签合同、发工资；试用
+ 19 | mv14b5rbosqmh1u2w3a | paragraph        | 为什么 / 怎么做：
+ 20 | mv14b5rcwr84nezvu4r | unorderedList    | 招聘说「先试岗，合适再谈工资」「试用期先不签合同」，或试用期一延再延、快满就换人，都要警惕。
+ 21 | mv14b5rckws249ihtg | unorderedList    | 上岗第一天就要求签书面劳动合同；试用期工资不得低于本单位同岗位最低档工资或合同约定工资的 80%，也不得低于当地最低工资。
+ 22 | mv14b5rcknz2h31ggqe | unorderedList    | 对方拖着不签，自己留好打卡记录、工作群消息、工资转账凭证。
+ 23 | mv14b5rct1rjzcjvkps | paragraph        | 来源：
+ 24 | mv14b5rfik540lskyu | unorderedList    | 全国人民代表大会常务委员会（2007 年通过，2012 年修正）. 中华人民共和国劳动合同法. https://sfj.beijing.gov.cn/sfj/sfdt/fzxc74
+ 25 | mv14b5rgd7w4u9u5i2j | paragraph        | 限制与争议： 「试岗」如双方约定、给报酬、时间短，本身不一定违法，问题在把它当免费用工；用工满一个月仍未签书面劳动合同，法律另有二倍工资规定，本条不展开。
+ 26 | mv0nbn2nczui7y61n9s | ?blockType,index,id,unknown | 
+ 27 | mv0nbn2n2hd4iscefpj | heading          | 3. 入职前要你交押金、服装费、培训费，或者花钱买「内推名额」的，一律拒绝
+ 28 | mv0nbn2nm6aiukrm | ?blockType,index,id | 
+ 29 | mv14az4uxm38v0jo78 | paragraph        | 说人话： 正规公司招人，是公司给你发钱，不该由你交钱。入职前要押金、服装费、资料费、培训费，或让你花钱买「内推名额」「保录取」的，一律拒绝。真从工资里扣损失赔偿，每月不超过当月工资
+ 30 | mv14az4vz4tbtdyf2dg | paragraph        | 为什么 / 怎么做：
+ 31 | mv1mu8fp29pja2bo6sl | unorderedList    | 找工作时先查中介有没有《人力资源服务许可证》（可在当地人社局官网的公示栏查），招聘信息写没写清工厂名称、岗位和工资构成，面试地点在不在工厂里；要你先交钱的直接走。
+ 32 | mv14az4v37gpks9h8k3 | unorderedList    | 「招转培」「培训贷」是常见套路：先用招聘把你吸引过去，再让你贷款几万块买培训，说好从工资里扣。
+ 33 | mv14az4wsadrfeukso | unorderedList    | 面试后说你「能力不够」、交钱培训才安排岗位，或中介收钱卖内推名额的，先拒绝。
+ 34 | mv14az4wlqfjk1swmtr | unorderedList    | 已经交了钱的，留好转账和聊天记录，向当地人力资源社会保障部门和公安机关反映。用人单位以担保等名义收取财物的，责令限期退还，并按每人 500 元以上 2000 元以下罚款。
+ 35 | mv14az4w1nks5kofucm | paragraph        | 来源：
+ 36 | mv14az4x8c0io7gikid | unorderedList    | 人力资源社会保障部、中央网信办、教育部、公安部、金融监管总局（2026）. 联合发布警惕「招转培」「培训贷」等风险提示. https://chinajob.mohrss.gov.c
+ 37 | mv14az4xfqqwaz8wed | unorderedList    | 全国人民代表大会常务委员会（2007 年通过，2012 年修正）. 中华人民共和国劳动合同法. https://sfj.beijing.gov.cn/sfj/sfdt/fzxc74
+ 38 | mv1mu8rkpenecxew0tl | unorderedList    | 劳动部（1994）. 工资支付暂行规定（劳部发〔1994〕489 号），第十六条. https://rsj.yueyang.gov.cn/7751/65001/content_19
+ 39 | mv14az4xn2r5q41ezk | paragraph        | 限制与争议： 正规的职业培训、考证要花钱，本条针对的是「和招聘捆绑、不培训就不安排岗位」这种，判断标准是这笔钱是不是获得岗位的前提；培训贷签的是与金融机构的贷款合同，招聘方跑路不影
+ 40 | mv1nqtyp9bf3ird1t65 | ?blockType,index,id,unknown | 
+ 41 | mv1muuenvk4ylozwo9c | heading          | 4. 计件工资先问清单价和定额，加班做出的件要按 1.5 倍、2 倍、3 倍算
+ 42 | mv1muuenhunzm48w8w6 | ?blockType,index,id | 
+ 43 | mv1muv8kz8or3rdh0j | paragraph        | 说人话： 计件工资按你做的件数乘单价算。上岗前一定问清三样：单价多少、一天做多少算满、做超了怎么算。做完定额之后又被安排加班的，加班做的那部分按计件单价的 1.5 倍、2 倍、3 
+ 44 | mv1muvn5k7y31pwy99 | paragraph        | 为什么 / 怎么做：
+ 45 | mv1muvn5uo3mv1ngp1p | unorderedList    | 《工资支付暂行规定》第十三条和劳动法第四十四条定了三档：工作日延长工时不低于 150%，休息日不能补休不低于 200%，法定节假日不低于 300%；计件工同样适用，按计件单价的 1
+ 46 | mv1muw1kpss2qrzldk | unorderedList    | 每天把自己做的件数、上下班时间拍照或记一笔，月底对着工资条核一核，差得多就去找班长或人事问。
+ 47 | mv1muwtk6jiacnh5m94 | paragraph        | 来源：
+ 48 | mv1muwtk8pbtr6fm3q2 | unorderedList    | 人力资源和社会保障部（2024）. 加班工资如何计算？. https://www.mohrss.gov.cn/SYrlzyhshbzb/ztzl/rslyyhyshj/zcwd/2
+ 49 | mv1muxbmqd3ag0xltye | unorderedList    | 全国人大常委会. 中华人民共和国劳动法，第四十四条. https://www.gjxfj.gov.cn/gjxfj/xxgk/fgwj/flfg/webinfo/2014/05/1
+ 50 | mv1mv3c83ooevq5jt37 | paragraph        | 限制与争议： 计件单价和定额由企业定，法律没有统一标准，压单价、抬定额是常见争议，觉得不合理可以投诉或走集体协商。自愿留下来抢产量的通常不算加班，最好让班长写清或用系统排班记录留痕
+ 51 | mv0nbn351sqm8lsl47m | ?blockType,index,id,unknown | 
+ 52 | mv0nbn35itgxhi3lu | heading          | 高性价比
+ 53 | mv0nbn36rpikctz5wul | heading          | 5. 遇到「境外高薪、包机票包食宿」的招聘，先查中介有没有对外劳务合作经营资格
+ 54 | mv0nbn36zlqzbg5658 | ?blockType,index,id | 
+ 55 | mv14atsw5m9qy64q4vm | paragraph        | 说人话： 境外高薪招聘里混着陷阱：承诺月入几万、包机票包食宿，到了当地被扣押护照、限制自由，被迫去做电信诈骗或网络赌博。合法的境外务工必须通过有资质的对外劳务合作企业办理，境外的企
+ 56 | mv14atsxh9yiy61cbw | paragraph        | 为什么 / 怎么做：
+ 57 | mv14atsxvfi01pzj37h | unorderedList    | 招聘不写具体公司、岗位，只说「东南亚」「高薪」「包机票包食宿」，又催你尽快出境、手续对方全包，都要警惕。
+ 58 | mv14atsxjadk0vytslr | unorderedList    | 出境前先查中介有没有对外劳务合作经营资格，合同和岗位是否写清；护照自己保管，不交给对方。
+ 59 | mv14atsyvh08nld52k8 | unorderedList    | 遇险情拨外交部全球领事保护与服务应急热线 +86-10-12308。
+ 60 | mv14atsylktcgdmlj1r | paragraph        | 来源：
+ 61 | mv14atsyruohy3h696 | unorderedList    | 国务院（2012）. 对外劳务合作管理条例（国务院令第 620 号）. http://zw.china.com.cn/2016-05/12/content_38440295.htm
+ 62 | mv14atsza33hro4nuj | unorderedList    | 中国驻刚果（布）使馆（2026）. 关于严防「高薪」陷阱，警惕电信网络诈骗的领事提醒. https://zfwb.cq.gov.cn/wsfw/lsbh/aqyj/202607/t
+ 63 | mv14atsz7nfgqvxhh45 | unorderedList    | 中国驻泰国使馆（2026）. 提醒在泰中国公民警惕「高薪招聘」陷阱. http://www.chinaqw.com/hdfw/2026/05-18/406136.shtml
+ 64 | mv14atszpy5unddgz3h | paragraph        | 限制与争议： 境外务工本身合法，也有正规高薪岗位，本条针对的是以招聘为名骗人从事违法活动的骗局，判断关键是渠道是否合法、手续是否透明；领保热线是应急渠道，不能替代事前对招聘方资质的
+ 65 | mv0nbn3r3qmisp2w6qp | ?blockType,index,id,unknown | 
+ 66 | mv0nbn3rvohqvzn0dc | heading          | 6. 面试说「正式岗」的，先问清劳动合同跟谁签、是不是劳务派遣或外包
+ 67 | mv0nbn3rdg0d0pcpopt | ?blockType,index,id | 
+ 68 | mv14alzkzm6wu78j0e | paragraph        | 说人话： 招聘说「正式员工」，合同却可能跟劳务派遣公司或外包公司签，工资、社保、晋升都隔着一层。面试先问清「劳动合同跟谁签」，就能分辨，再决定签不签。
+ 69 | mv14alzkqs2ix7py0d9 | paragraph        | 为什么 / 怎么做：
+ 70 | mv14alzlruwqa96x51q | unorderedList    | 面试地点和签合同的公司不是同一家，或录用通知写「外包」「派遣」「驻场」，工资社保都由第三方发缴，都要多问一句。
+ 71 | mv14alzlnuyp4vzt6he | unorderedList    | 问清合同跟谁签、是派遣还是外包、社保按什么基数缴、同岗位正式员工待遇如何，并写进录用通知或合同；派遣公司要和派遣工签 2 年以上的固定期限合同，被退回后没活干期间按当地最低工资按月
+ 72 | mv14alzlccpvwhp8bww | unorderedList    | 即便通过派遣、外包入职，单位依法缴纳社保也是义务，未依法缴纳致损的要赔偿。
+ 73 | mv14alzm2bx41yq1p71 | paragraph        | 来源：
+ 74 | mv14alzmk2tlxe5y4gh | unorderedList    | 全国人民代表大会常务委员会（2007 年通过，2012 年修正）. 中华人民共和国劳动合同法. https://sfj.beijing.gov.cn/sfj/sfdt/fzxc74
+ 75 | mv14alzmb9ygylbh2n8 | unorderedList    | 人力资源和社会保障部（2014）. 劳务派遣暂行规定（人社部令第 22 号）. https://www.mohrss.gov.cn/xxgk2020/fdzdgknr/zcfg/b
+ 76 | mv14alzngr0ye6badmc | unorderedList    | 人力资源社会保障部、最高人民法院（2025）. 劳动人事争议典型案例（第四批）. https://www.court.gov.cn/zixun/xiangqing/462311.h
+ 77 | mv14alznw3zj3at0tp | paragraph        | 限制与争议： 派遣和外包不违法，很多岗位依法就是走这两种形式，问题在招聘方有没有如实告知，现实中超比例使用并不少见，各地执法力度不一；外包买的是服务，劳动者通常跟外包公司建立劳动关
+ 78 | mv0nbn4dnxehctizdt | ?blockType,index,id,unknown | 
+ 79 | mv0nbn4eu6tp9xi4nkf | heading          | 7. 遇到「以租代招」，先算清租约回本要跑多少单，再决定签不签
+ 80 | mv0nbn4f6re51815b3u | ?blockType,index,id | 
+ 81 | mv14agcwtaq71a97t59 | paragraph        | 说人话： 网约车、货运、外卖里有「以租代招」：想上岗先租公司的车或设备，押金和每月租金压着，跑不够单量还要赔违约金。表面是招聘，实际是让你背上一笔租约。签之前先算一笔账：每月租金加
+ 82 | mv14agcxgl612yo18ub | paragraph        | 为什么 / 怎么做：
+ 83 | mv14agcxzq7vz35559n | unorderedList    | 招聘要求「先租车、后上岗」，或让你签「融资租赁合同」「以租代购」，却拿「保底收入」「月入过万」留人，风险大多压给劳动者。
+ 84 | mv14agcx92xruqfg66 | unorderedList    | 让公司把保底收入、单量要求、租金、油费分摊、退出条件写进合同，再算回本账。
+ 85 | mv14agcy33v41oq4di | unorderedList    | 算不清就不签；合同只约束你、不写公司保障的，中途退出多半要赔违约金。
+ 86 | mv14agcyr5129p2e7 | paragraph        | 来源：
+ 87 | mv14agcz1f0kcdgga9g | unorderedList    | 全国人民代表大会常务委员会（2007 年通过，2012 年修正）. 中华人民共和国劳动合同法. https://sfj.beijing.gov.cn/sfj/sfdt/fzxc74
+ 88 | mv14agcz3fun01iyajg | paragraph        | 限制与争议： 「以租代招」不必然违法，市场上确有正规的「车辆租赁＋平台接单」模式，争议在把租约设成上岗前提；租约和劳动关系的边界、平台该担什么责任，目前缺少统一官方口径，本条定 B
+ 89 | mv0nbn5a3d56dxn0hqp | ?blockType,index,id,unknown | 
+ 90 | mv0nbn5a732g8p9vbmv | heading          | 一般性价比
+ 91 | mv0nbn5a5sdfsmdwi4d | heading          | 8. 兼职要你先垫钱、交会费的，不要做——刷单、点赞、日结多是冲着垫钱来的
+ 92 | mv0nbn5bj201gwwfsi | ?blockType,index,id | 
+ 93 | mv14a8xhhh935f19jwl | paragraph        | 说人话： 兼职群里常见的「串串」——刷单、点赞、投票、代付、日结任务，多数冲着让你先垫钱。前面几单真返你几块，等你垫了大额，人就联系不上了。正常的兼职是你出时间换钱，不会让你先掏钱
+ 94 | mv14a8xib7glwgmydxo | paragraph        | 为什么 / 怎么做：
+ 95 | mv14a8xi4fn6zoq7qd9 | unorderedList    | 要先交「会员费」「保证金」才能接单，或要你先垫付再返现，任务金额越来越大、返现越来越慢，是刷单返利类诈骗的典型手法。
+ 96 | mv14a8xiigcsveijonc | unorderedList    | 记三条底线：不交钱、不垫付、不给验证码，也不下载不明 App、不提供银行卡。
+ 97 | mv14a8xicaxwtiutii | unorderedList    | 已经转账的，尽快联系银行冻结，保留证据并报警。
+ 98 | mv14a8xjdjdzrqn2yat | paragraph        | 来源：
+ 99 | mv14a8xjuri4usuxn7 | unorderedList    | 全国人民代表大会常务委员会（2022）. 中华人民共和国反电信网络诈骗法. http://www.npc.gov.cn/npc/c2/c30834/202209/t20220902
+100 | mv14a8xj27xve5yxdzk | paragraph        | 限制与争议： 正规的兼职、日结、跑腿、临时工是存在的，本条针对的是要你先垫钱、交会费、买「任务名额」的，判断标准就一条，正常用工是别人给你钱；刷单炒信本身违反平台规则，即使没被骗，
+101 | mv0nbnvuzyjlpoiuejp | ?blockType,index,id,unknown | 
+102 | mv0nbnvvqs79qeo1gv | heading          | 9. 抬头好听却说不清做什么的岗位，先问清职责、带不带人、拿多少钱
+103 | mv0nbnvwrwqjcx2ru8m | ?blockType,index,id | 
+104 | mv14a213trbfcldmh8 | paragraph        | 说人话： 招聘里的「管培生」「储备干部」「客户经理」「某某专员」，名字听着体面，实际可能是打杂、销售或基层工人换了个称呼。别被抬头骗，问清三件事：具体做什么、带不带人、到手多少钱。
+105 | mv14a21a2qs26871qli | paragraph        | 为什么 / 怎么做：
+106 | mv14a21bnbr2d9xd2r | unorderedList    | 岗位名称高大上、核心职责却说不清，或叫「经理」却是一个人的部门、工资和普通岗位一样，都要留意。
+107 | mv14a21biacjyuimhu | unorderedList    | 面试最后问四个问题：合同里的岗位名称是什么，每天主要做哪几件事，汇报给谁、有没有下属，底薪多少、怎么算。
+108 | mv14a21c8q45ddd7l73 | unorderedList    | 答案含糊的，按不符合预期处理。
+109 | mv14a21ci6fx9j6nb9c | paragraph        | 来源：
+110 | mv14a21c743tv9z17qy | unorderedList    | 全国人民代表大会常务委员会（2007 年通过，2012 年修正）. 中华人民共和国劳动合同法. https://sfj.beijing.gov.cn/sfj/sfdt/fzxc74
+111 | mv14a21d8dknxbs4agu | paragraph        | 限制与争议： 抬头虚高不违法，也不等于坑，有的「储备干部」确实有带教和晋升通道，判断看具体内容和待遇；本条定 C 级，因为判断抬头真假主要靠经验，缺少可量化的官方数据。
+112 | mv0nbnyf1fy2c2do6ls | ?blockType,index,id,unknown | 
+113 | mv0tl917uie28arxda | ?blockType,index,id | 

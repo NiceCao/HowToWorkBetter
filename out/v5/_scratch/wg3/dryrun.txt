@@ -1,0 +1,74 @@
+ch35 plan: item6=draft5(极高) after 5限制 ; item10=draft6(高) after 8限制 ; renum 6->7,7->8,8->9,9->11 ; intro update
+   NEW6 h3 6. 想跟老师傅学到东西，先让他觉得带你省事
+   NEW6 p 性价比：极高
+成本：钱=0 时间=中 精力=中
+口径：收入 / 职业寿命
+证据等
+   NEW6 p 说人话： 师傅手里有真东西，但他没有教你的义务。让他愿意教的顺序是：先把他不愿干
+   NEW6 p 为什么 / 怎么做： 潮新闻 2023 年走访昆山电子厂时，一位从流水线做到主管
+   NEW6 p 来源：
+   NEW6 p 人力资源社会保障部（2022）. 关于健全完善新时代技能人才职业技能等级制度的意
+   NEW6 p 教育部（2018）. 企业新型学徒制全面推行（转载自中国教育报）. http:/
+   NEW6 p 潮新闻（2023）. 电子厂里的年轻人（记者 王晨辉）. https://tid
+   NEW6 p 限制与争议： 新型学徒制的补贴发给企业，不直接发给个人，企业愿不愿意办、办得实不
+   NEW10 h3 10. 想换好岗位、拿更高工资，先在厂里把多能工和技能等级拿到手
+   NEW10 p 性价比：高
+成本：钱=0 时间=中 精力=中
+口径：收入 / 职业寿命
+证据等级
+   NEW10 p 说人话： 厂里的好岗位（质检、设备维修、物料、班组长、技术员）通常从本厂熟手里挑
+   NEW10 p 为什么 / 怎么做： 岗位轮换能让人积累更广的经验，接触的任务越杂，学到的东西越
+   NEW10 p 来源：
+   NEW10 p Ortega, J. (2001). Job Rotation as a Lea
+   NEW10 p 新华社（2022）. 提待遇、畅通道，“新八级工”来了！. http://www
+   NEW10 p 限制与争议： 岗位轮换的研究来自企业内部的岗位安排，不等于所有工厂都愿意让工人换
+
+########## ch35 ##########
+  [ref] insert item6 after mv1n06i93nyxseig82i ('这项研究针对企业内的岗位轮换')
+  [ref] insert item10 after mv15r4liqrvgzbekq8 ('EF 指数是自愿在线测试')
+  [ref] renum '6. 考证优先选' -> 7.  @ mv0rawjl64xxv09cqls
+  [ref] renum '7. 读研或读 MBA' -> 8.  @ mv0rax5krrggthbdvz
+  [ref] renum '8. 英语按用途学' -> 9.  @ mv0rax5z5w1rstm0yzw
+  [ref] renum '9. 副业先从主业' -> 11.  @ mv0rax6ku0om1amq5s
+  [ref] intro @ mv0w6juc6gwkkjvdiwf
+   (dry run, no writes)
+
+########## ch39 ##########
+  [ref] insert item6 after mv1my9dfgu0d4css8r ('这条属通识经验，不同城市、不同性别')
+  [ref] insert item10 after mv15v65wane8xyxbthr ('新增目录里被叫作鼠标手的腕管综合征')
+  [ref] renum '6. 按年龄和风险' -> 7.  @ mv0reqejvgzack7sww
+  [ref] renum '7. 把每天盐油糖' -> 8.  @ mv0reqggih0rdv4egqj
+  [ref] renum '8. 先分清普通疾病' -> 9.  @ mv0reqiip196erf42he
+  [ref] renum '9. 发生工伤后' -> 11.  @ mv0reqlis9i6568h0a
+  [ref] preview add '在陌生城市出事多半在夜里和路上' @ mv1myaeqfftbuuuja4
+  [ref] preview ren '条目 6：按年龄和风险' @ mv0reqecn5fxmehfuti
+  [ref] preview ren '条目 7：把每天盐油糖' @ mv0reqeew86achuayjm
+  [ref] preview ren '条目 8：先分清普通疾病' @ mv0reqefaeqy6gvom4e
+  [ref] preview add '能不能算职业病要看是否在目录内' @ mv0reqegl438yfc47k
+  [ref] preview ren '条目 9：发生工伤' @ mv0reqldncq75xqun4i
+  [ref] intro @ mv0wege9rrdpuf8n57h
+   (dry run, no writes)
+
+########## ch43 ##########
+  [ref] insert item5 after mv164pxlzbwnu9enug ('支付令的缺点是公司一提出书面异议')
+  [ref] renum '5. 遇到人格侮辱' -> 6.  @ mv0m32qqfa1zst0b9v
+  [ref] renum '6. 上班受伤要走工伤认定' -> 7.  @ mv0m32r201jfn6wcct5n
+  [ref] renum '7. 申请劳动仲裁按五步走' -> 8.  @ mv0m32rh3c4fot84np5
+  [ref] renum '8. 公司以竞业限制' -> 9.  @ mv0m333ybqmlxs2als
+  [ref] renum '9. 遇到劳动问题先打对热线' -> 10.  @ mv0m334jex3eovf8iri
+  [ref] renum '10. 仲裁请求要逐项分开写' -> 11.  @ mv1muxoaue2v57u4acj
+  [ref] renum '11. 裁决生效后对方不付钱' -> 12.  @ mv1muxoh7kk5e7zc5i2
+  [ref] intro @ mv0w6xaaocty2g9rvii
+   (dry run, no writes)
+
+########## ch08 ##########
+  [ref] insert item5 after mv1mv3c83ooevq5jt37 ('计件单价和定额由企业定')
+  [ref] renum '5. 遇到「境外高薪' -> 6.  @ mv0nbn36rpikctz5wul
+  [ref] renum '6. 面试说「正式岗」' -> 7.  @ mv0nbn3rvohqvzn0dc
+  [ref] renum '7. 遇到「以租代招」' -> 8.  @ mv0nbn4eu6tp9xi4nkf
+  [ref] renum '8. 兼职要你先垫钱' -> 9.  @ mv0nbn5a5sdfsmdwi4d
+  [ref] renum '9. 抬头好听却说不清' -> 10.  @ mv0nbnvvqs79qeo1gv
+  [ref] intro @ mv0tlkeyzngyne0mn
+   (dry run, no writes)
+
+DONE dry

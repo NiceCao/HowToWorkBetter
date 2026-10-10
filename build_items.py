@@ -64,7 +64,7 @@ for f in sorted(glob.glob('book/*.md')):
         m = re.search(r'\*\*来源[^\n]*\*\*(.*?)(?=\n\*\*|\Z)', b, re.S)
         src = m.group(1) if m else ''
         links = re.findall(r'https?://\S+', src)
-        noref = bool(re.search(r'未找到(直接相关的)?官方', src)) or bool(re.fullmatch(r'\s*[\-–—]?\s*无\s*[。.]?\s*', src))
+        noref = bool(re.search(r'未找到(直接相关的)?官方', src)) or bool(re.fullmatch(r'\s*[\-–—]?\s*无\s*[。.]?\s*(?:（[^）]{0,40}）)?\s*', src))
         srcs = len({l.rstrip('.,，。') for l in links})
         money, time, energy = bucket(money, 'money'), bucket(time, 'time'), bucket(energy, 'energy')
         scopes = [s for s in dict.fromkeys(s.split('（')[0].replace(' ', '') for s in scopes) if s in ('收入', '职业寿命', '时间精力', '职业自由')]

@@ -69,7 +69,7 @@ URL_RE = re.compile(r'https?://[^\s<>「」『』【】（），。；、""\'\'`
 
 def _is_none_src(src_txt: str) -> bool:
     """来源写成「无」的两种形式都算合规：同一行「来源：无」，或下一行列表项「- 无」。"""
-    return bool(re.search(r'来源\s*[:：]\s*[-–—•*]?\s*无\s*[。.]?\s*$',
+    return bool(re.search(r'来源\s*[:：]\s*[-–—•*]?\s*无\s*[。.]?\s*(?:（[^）]{0,40}）)?\s*$',
                           re.sub(r'[\s*]+', ' ', src_txt or '')))
 def clean_url(u):
     """削掉链接末尾粘上的标点，并去掉不成对的右括号。"""

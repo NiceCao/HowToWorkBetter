@@ -38,6 +38,13 @@ section.item li { margin:0 0 6px; }
 section.item a { word-break:break-all; }
 .hl { background:#fff8e6; border-radius:3px; }
 footer { border-top:1px solid var(--line); margin-top:40px; padding-top:18px; color:var(--ink2); font-size:13px; }
+footer p { margin:0 0 8px; }
+footer p:last-child { margin-bottom:0; }
+footer p.dl { display:flex; flex-wrap:wrap; align-items:baseline; gap:2px 8px; margin:0 0 12px; }
+footer p.dl a { color:var(--accent); text-decoration:none; white-space:nowrap; }
+footer p.dl a:hover { text-decoration:underline; }
+footer p.dl .bar2 { color:var(--line); }
+footer p.dl .sep { color:#b9b9c2; margin:0 2px; }
 '''
 
 
@@ -137,7 +144,9 @@ def build_chapter(f):
 <h1>{head}</h1>
 {intro}
 {''.join(body_parts)}
-<footer><p>本页内容以 CC BY 4.0 授权；法律、医疗、投资相关条目仅供参考，不构成建议。原文见 <a href="https://github.com/NiceCao/HowToWorkBetter">GitHub 仓库</a>。</p></footer>
+<footer>
+<p class="dl"><span>下载：</span><a href="https://github.com/NiceCao/HowToWorkBetter/releases/download/epub-latest/HowToWorkBetter.pdf">PDF</a><span class="bar2">·</span><a href="https://github.com/NiceCao/HowToWorkBetter/releases/download/epub-latest/HowToWorkBetter.epub">EPUB</a><span class="bar2">·</span><a href="https://github.com/NiceCao/HowToWorkBetter/releases/download/epub-latest/HowToWorkBetter.html">离线单页 HTML</a><span class="sep">|</span><span>手机上读：</span><a href="https://shangbanbao.com/work.html">上班宝 · 工作指南</a></p>
+<p>本页内容以 CC BY 4.0 授权；法律、医疗、投资相关条目仅供参考，不构成建议。原文见 <a href="https://github.com/NiceCao/HowToWorkBetter">GitHub 仓库</a>。</p></footer>
 </div></body></html>'''
     out_name = CH[n]['file'][:-3] + '.html'
     open(os.path.join('ch', out_name), 'w', encoding='utf-8').write(page)

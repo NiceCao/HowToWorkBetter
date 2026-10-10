@@ -160,6 +160,9 @@ body {{
 header h1 {{ font-family:var(--serif); font-weight:700; font-size:31px; line-height:1.4; letter-spacing:.01em; margin:0 0 14px; }}
 header p.lead {{ color:var(--ink2); font-size:15px; margin:0 0 6px; }}
 .meta {{ color:var(--ink2); font-size:13px; margin-top:18px; }}
+.entry {{ display:flex; flex-wrap:wrap; gap:8px 10px; align-items:center; margin:20px 0 0; }}
+.entry a {{ display:inline-block; text-decoration:none; color:var(--accent); background:var(--accent-soft); border-radius:999px; padding:5px 14px; font-size:13.5px; white-space:nowrap; font-weight:500; }}
+.entry a:hover {{ background:#f8e2ca; }}
 h2 {{ font-family:var(--serif); font-weight:700; font-size:21px; margin:56px 0 6px; letter-spacing:.01em; }}
 h2 + p.hint {{ color:var(--ink2); font-size:14px; margin:0 0 20px; }}
 .card, .rcard {{ border:1px solid var(--line); border-radius:14px; padding:20px 22px; margin:14px 0; background:var(--bg); }}
@@ -228,6 +231,7 @@ mark {{ background:#fff2c2; color:inherit; border-radius:3px; padding:0 2px; }}
   input[type=search] {{ background:var(--bg2); color:var(--ink); }}
   .chip {{ background:var(--bg2); color:var(--ink); }}
   a.ch:hover {{ background:#4a3520; }}
+  .entry a:hover {{ background:#4a3520; }}
   mark {{ background:#4a3a12; }}
   .tag.evA {{ color:#7bd88f; background:#17301f; }}
   .tag.evB {{ color:#e2c56b; background:#2f2a14; }}
@@ -241,6 +245,13 @@ mark {{ background:#fff2c2; color:inherit; border-radius:3px; padding:0 2px; }}
   <h1>《高性价比工作指南》· 检索与指路</h1>
   <p class="lead">50 章、{len(entries)} 条建议，按「你现在在哪一步」和「你是做什么的」两条路进入。每条都写成一句能直接照做的建议，标了性价比档位和证据等级。</p>
   <p class="meta">找不到方向就用下面的搜索；想按章节顺序读，直接翻到最后一节的全书目录。</p>
+  <nav class="entry">
+    <a href="#find">在线检索</a>
+    <a href="https://github.com/NiceCao/HowToWorkBetter/releases/download/epub-latest/HowToWorkBetter.pdf">下载 PDF</a>
+    <a href="https://github.com/NiceCao/HowToWorkBetter/releases/download/epub-latest/HowToWorkBetter.epub">下载 EPUB</a>
+    <a href="https://github.com/NiceCao/HowToWorkBetter/releases/download/epub-latest/HowToWorkBetter.html">下载离线单页</a>
+    <a href="https://shangbanbao.com/work.html">手机上读：上班宝</a>
+  </nav>
 </header>
 
 <h2>一、按你现在在哪一步</h2>
@@ -253,7 +264,7 @@ mark {{ background:#fff2c2; color:inherit; border-radius:3px; padding:0 2px; }}
 {''.join(role_card(*r) for r in roles)}
 </div>
 
-<h2>三、按条件找</h2>
+<h2 id="find">三、按条件找</h2>
 <p class="hint">七组条件可以叠着用：先圈板块，再挑性价比档位、证据等级、你要换回来的东西，以及愿不愿意花钱、花时间、耗精力。点一条结果，直接跳到那一章的正文位置。</p>
 <div class="filters">
 {filters_html}
